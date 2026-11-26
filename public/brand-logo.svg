@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 36" fill="none">
+  <rect x="0.5" y="2.5" width="31" height="31" rx="7" fill="#FFFFFF" stroke="#E5E0D8" />
+  <path d="M9 10.5c4.4 3.2 9.6 11.8 14 15" stroke="#14171F" stroke-width="2.6" stroke-linecap="round" />
+  <path d="M23 10.5c-4.4 3.2-9.6 11.8-14 15" stroke="#14171F" stroke-width="2.6" stroke-linecap="round" />
+  <circle cx="16" cy="18" r="3.6" fill="#FFFFFF" stroke="#B83B5E" stroke-width="2" />
+  <text x="42" y="19" fill="#14171F" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" letter-spacing="3.5">XIGONG</text>
+  <text x="42" y="30" fill="#525A69" font-family="system-ui, -apple-system, sans-serif" font-size="8.5" font-weight="600" letter-spacing="2">KNITTING APPAREL</text>
+</svg>

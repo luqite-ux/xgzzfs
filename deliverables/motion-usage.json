@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "queries": [
+    {
+      "query": "",
+      "at": "2026-11-26T09:34:59.475Z",
+      "catalogHash": "2d190f64d6275820fc8fb818f19c0f360155d8f4545790b900628e67c200afdd",
+      "ids": [
+        "original-energy-hero",
+        "original-rail-motion",
+        "original-cinema-motion",
+        "original-fashion-motion",
+        "original-material-motion",
+        "original-machine-motion",
+        "original-product-motion",
+        "original-hero-motion",
+        "original-scroll-motion",
+        "original-cards-motion",
+        "original-hover-motion",
+        "original-image-motion",
+        "original-parallax-motion",
+        "original-text-motion",
+        "original-counter-motion",
+        "original-header-motion",
+        "original-menu-motion",
+        "original-cta-motion",
+        "original-accordion-motion",
+        "original-wipe-motion",
+        "original-ticker-motion",
+        "original-certificate-motion",
+        "original-why-us-bento"
+      ]
+    }
+  ],
+  "decision": "none",
+  "items": [],
+  "reason": "Original motion library candidates do not include a light-porcelain Three.js 7G knitwear stitch & yarn wave topology studio; implementing bespoke Three.js WebGL studio and native IntersectionObserver viewport lifecycle tailored to Suzhou Xigong."
+}

@@ -1,0 +1,49 @@
+{
+  "attachments": [
+    {
+      "role": "Hero Banner 1 (Deep navy left safe zone, blueprint + sweaters right)",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/banners/banner-1.jpg",
+      "source": "banner背景图/1.jpg"
+    },
+    {
+      "role": "Hero Banner 2 (Bright alabaster left safe zone, knitting machine right)",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/banners/banner-2.jpg",
+      "source": "banner背景图/2.jpg"
+    },
+    {
+      "role": "Hero Banner 3 (Warm ivory left safe zone, knitwear mannequins right)",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/banners/banner-3.jpg",
+      "source": "banner背景图/3.jpg"
+    },
+    {
+      "role": "Representative Product 1: Yunjian Huaxu Raspberry Embroidered Wool Cardigan",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/yunjian-huaxu/yh-01.jpg",
+      "source": "产品图片/云间花叙/1 (1).jpg"
+    },
+    {
+      "role": "Representative Product 1 Off-White Variant",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/yunjian-huaxu/yh-07.jpg",
+      "source": "产品图片/云间花叙/1 (7).jpg"
+    },
+    {
+      "role": "Representative Product 2: White Tea Openwork Ribbed Knit Sweater",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/baicha/bc-01-front-a.jpg",
+      "source": "产品图片/白茶/0-正面图 (2).jpg"
+    },
+    {
+      "role": "Representative Product 3: 3D Butterfly Hollow-Out Knit Base Layer",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/butterfly-base/bf-00-front.jpg",
+      "source": "产品图片/蝴蝶打底衫/0.jpg"
+    },
+    {
+      "role": "Representative Factory 1: Computerized Flat Knitting Workshop (HP2-52S 7G)",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/factory/factory-07.jpg",
+      "source": "工厂实拍图片/1 (7).jpg"
+    },
+    {
+      "role": "Representative Factory 2: Final Garment Quality Inspection Line",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/factory/factory-05.jpg",
+      "source": "工厂实拍图片/1 (5).jpg"
+    }
+  ]
+}

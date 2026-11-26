@@ -1,0 +1,671 @@
+{
+  "schema_version": 1,
+  "customer": "苏州西宫针织服饰有限公司",
+  "category_audit": {
+    "status": "audited",
+    "source_has_categories": true,
+    "sources_checked": [
+      "官网资料&产品&FQA收集表.xlsx#企业资料!C8",
+      "官网资料&产品&FQA收集表.xlsx#产品信息!B5:C7",
+      "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片"
+    ]
+  },
+  "source_categories": [
+    {
+      "category_key": "womens-knit-sweaters",
+      "name": "Women's Knit Sweaters & Cardigans",
+      "name_hash": "sha256:4e0e49d2f013f8e403708768fc7dda68ab0a178fb02578832239517dda184272",
+      "source_locator": "官网资料&产品&FQA收集表.xlsx#企业资料!C8 + 产品信息!C7",
+      "product_keys": [
+        "yunjian-huaxu-cardigan"
+      ]
+    },
+    {
+      "category_key": "womens-knit-base-layers",
+      "name": "Women's Knit Base Layers",
+      "name_hash": "sha256:d0bf38c8e187905110ff08dae6781ab4ec6ea8d0f5aae43f4772c699d9cdaba3",
+      "source_locator": "官网资料&产品&FQA收集表.xlsx#企业资料!C8 + 产品信息!C6",
+      "product_keys": [
+        "baicha-knit-sweater",
+        "butterfly-knit-base-layer"
+      ]
+    }
+  ],
+  "source_entries": [
+    {
+      "source_id": "src-prod-yunjian-huaxu",
+      "classification": "product",
+      "product_key": "yunjian-huaxu-cardigan",
+      "assets": [
+        "产品图片/云间花叙/1 (1).jpg",
+        "产品图片/云间花叙/1 (10).jpg",
+        "产品图片/云间花叙/1 (11).jpg",
+        "产品图片/云间花叙/1 (12).jpg",
+        "产品图片/云间花叙/1 (2).jpg",
+        "产品图片/云间花叙/1 (3).jpg",
+        "产品图片/云间花叙/1 (4).jpg",
+        "产品图片/云间花叙/1 (5).jpg",
+        "产品图片/云间花叙/1 (6).jpg",
+        "产品图片/云间花叙/1 (7).jpg",
+        "产品图片/云间花叙/1 (8).jpg",
+        "产品图片/云间花叙/1 (9).jpg"
+      ]
+    },
+    {
+      "source_id": "src-prod-baicha",
+      "classification": "product",
+      "product_key": "baicha-knit-sweater",
+      "assets": [
+        "产品图片/白茶/0-正面图 (2).jpg",
+        "产品图片/白茶/0-正面图 (3).jpg",
+        "产品图片/白茶/细节图 (1).jpg",
+        "产品图片/白茶/细节图 (2).jpg",
+        "产品图片/白茶/细节图 (3).jpg",
+        "产品图片/白茶/细节图 (4).jpg",
+        "产品图片/白茶/细节图 (5).jpg",
+        "产品图片/白茶/细节图 (6).jpg",
+        "产品图片/白茶/背面图.jpg"
+      ]
+    },
+    {
+      "source_id": "src-prod-butterfly",
+      "classification": "product",
+      "product_key": "butterfly-knit-base-layer",
+      "assets": [
+        "产品图片/蝴蝶打底衫/0.jpg",
+        "产品图片/蝴蝶打底衫/1 (1).jpg",
+        "产品图片/蝴蝶打底衫/1 (2).jpg",
+        "产品图片/蝴蝶打底衫/1 (3).jpg",
+        "产品图片/蝴蝶打底衫/1 (4).jpg",
+        "产品图片/蝴蝶打底衫/1 (5).jpg",
+        "产品图片/蝴蝶打底衫/1 (6).jpg",
+        "产品图片/蝴蝶打底衫/1 (7).jpg",
+        "产品图片/蝴蝶打底衫/1 (8).jpg",
+        "产品图片/蝴蝶打底衫/1 (9).jpg"
+      ]
+    }
+  ],
+  "product_identity": {
+    "inventory": {
+      "path": "product-identity-inventory.json",
+      "sha256": "85622b64f55f1c6d41f4508988cdb5492c129420199ea16cf9e936922ca50bda"
+    },
+    "decisions": [
+      {
+        "unit_id": "yunjian-huaxu-cardigan-u01",
+        "product_key": "yunjian-huaxu-cardigan",
+        "relationship": "independent",
+        "status": "source_supported",
+        "rationale": "Primary studio front view representing independent knitwear style yunjian-huaxu-cardigan.",
+        "evidence": {
+          "path": "identity-evidence-yunjian-huaxu-cardigan.json",
+          "sha256": "22cae0e6a8cce66cecb47f6cd0db877feb393a2cf58d88f03b6eb61eaaea0690"
+        }
+      },
+      {
+        "unit_id": "yunjian-huaxu-cardigan-u02",
+        "product_key": "yunjian-huaxu-cardigan",
+        "relationship": "variant",
+        "status": "source_supported",
+        "rationale": "Colorway variant studio view of the same yunjian-huaxu-cardigan embroidered cardigan design (Off-White colorway matching Excel H5/H7).",
+        "evidence": {
+          "path": "identity-evidence-yunjian-huaxu-cardigan.json",
+          "sha256": "22cae0e6a8cce66cecb47f6cd0db877feb393a2cf58d88f03b6eb61eaaea0690"
+        }
+      },
+      {
+        "unit_id": "yunjian-huaxu-cardigan-u03",
+        "product_key": "yunjian-huaxu-cardigan",
+        "relationship": "variant",
+        "status": "source_supported",
+        "rationale": "Colorway variant studio view of the same yunjian-huaxu-cardigan embroidered cardigan design (Off-White colorway matching Excel H5/H7).",
+        "evidence": {
+          "path": "identity-evidence-yunjian-huaxu-cardigan.json",
+          "sha256": "22cae0e6a8cce66cecb47f6cd0db877feb393a2cf58d88f03b6eb61eaaea0690"
+        }
+      },
+      {
+        "unit_id": "yunjian-huaxu-cardigan-u04",
+        "product_key": "yunjian-huaxu-cardigan",
+        "relationship": "variant",
+        "status": "source_supported",
+        "rationale": "Colorway variant studio view of the same yunjian-huaxu-cardigan embroidered cardigan design (Off-White colorway matching Excel H5/H7).",
+        "evidence": {
+          "path": "identity-evidence-yunjian-huaxu-cardigan.json",
+          "sha256": "22cae0e6a8cce66cecb47f6cd0db877feb393a2cf58d88f03b6eb61eaaea0690"
+        }
+      },
+      {
+        "unit_id": "yunjian-huaxu-cardigan-u05",
+        "product_key": "yunjian-huaxu-cardigan",
+        "relationship": "multiview",
+        "status": "source_supported",
+        "rationale": "Additional angle/detail studio photograph of the same yunjian-huaxu-cardigan garment.",
+        "evidence": {
+          "path": "identity-evidence-yunjian-huaxu-cardigan.json",
+          "sha256": "22cae0e6a8cce66cecb47f6cd0db877feb393a2cf58d88f03b6eb61eaaea0690"
+        }
+      },
+      {
+        "unit_id": "yunjian-huaxu-cardigan-u06",
+        "product_key": "yunjian-huaxu-cardigan",
+        "relationship": "multiview",
+        "status": "source_supported",
+        "rationale": "Additional angle/detail studio photograph of the same yunjian-huaxu-cardigan garment.",
+        "evidence": {
+          "path": "identity-evidence-yunjian-huaxu-cardigan.json",
+          "sha256": "22cae0e6a8cce66cecb47f6cd0db877feb393a2cf58d88f03b6eb61eaaea0690"
+        }
+      },
+      {
+        "unit_id": "yunjian-huaxu-cardigan-u07",
+        "product_key": "yunjian-huaxu-cardigan",
+        "relationship": "multiview",
+        "status": "source_supported",
+        "rationale": "Additional angle/detail studio photograph of the same yunjian-huaxu-cardigan garment.",
+        "evidence": {
+          "path": "identity-evidence-yunjian-huaxu-cardigan.json",
+          "sha256": "22cae0e6a8cce66cecb47f6cd0db877feb393a2cf58d88f03b6eb61eaaea0690"
+        }
+      },
+      {
+        "unit_id": "yunjian-huaxu-cardigan-u08",
+        "product_key": "yunjian-huaxu-cardigan",
+        "relationship": "multiview",
+        "status": "source_supported",
+        "rationale": "Additional angle/detail studio photograph of the same yunjian-huaxu-cardigan garment.",
+        "evidence": {
+          "path": "identity-evidence-yunjian-huaxu-cardigan.json",
+          "sha256": "22cae0e6a8cce66cecb47f6cd0db877feb393a2cf58d88f03b6eb61eaaea0690"
+        }
+      },
+      {
+        "unit_id": "yunjian-huaxu-cardigan-u09",
+        "product_key": "yunjian-huaxu-cardigan",
+        "relationship": "multiview",
+        "status": "source_supported",
+        "rationale": "Additional angle/detail studio photograph of the same yunjian-huaxu-cardigan garment.",
+        "evidence": {
+          "path": "identity-evidence-yunjian-huaxu-cardigan.json",
+          "sha256": "22cae0e6a8cce66cecb47f6cd0db877feb393a2cf58d88f03b6eb61eaaea0690"
+        }
+      },
+      {
+        "unit_id": "yunjian-huaxu-cardigan-u10",
+        "product_key": "yunjian-huaxu-cardigan",
+        "relationship": "variant",
+        "status": "source_supported",
+        "rationale": "Colorway variant studio view of the same yunjian-huaxu-cardigan embroidered cardigan design (Off-White colorway matching Excel H5/H7).",
+        "evidence": {
+          "path": "identity-evidence-yunjian-huaxu-cardigan.json",
+          "sha256": "22cae0e6a8cce66cecb47f6cd0db877feb393a2cf58d88f03b6eb61eaaea0690"
+        }
+      },
+      {
+        "unit_id": "yunjian-huaxu-cardigan-u11",
+        "product_key": "yunjian-huaxu-cardigan",
+        "relationship": "variant",
+        "status": "source_supported",
+        "rationale": "Colorway variant studio view of the same yunjian-huaxu-cardigan embroidered cardigan design (Off-White colorway matching Excel H5/H7).",
+        "evidence": {
+          "path": "identity-evidence-yunjian-huaxu-cardigan.json",
+          "sha256": "22cae0e6a8cce66cecb47f6cd0db877feb393a2cf58d88f03b6eb61eaaea0690"
+        }
+      },
+      {
+        "unit_id": "yunjian-huaxu-cardigan-u12",
+        "product_key": "yunjian-huaxu-cardigan",
+        "relationship": "variant",
+        "status": "source_supported",
+        "rationale": "Colorway variant studio view of the same yunjian-huaxu-cardigan embroidered cardigan design (Off-White colorway matching Excel H5/H7).",
+        "evidence": {
+          "path": "identity-evidence-yunjian-huaxu-cardigan.json",
+          "sha256": "22cae0e6a8cce66cecb47f6cd0db877feb393a2cf58d88f03b6eb61eaaea0690"
+        }
+      },
+      {
+        "unit_id": "baicha-knit-sweater-u01",
+        "product_key": "baicha-knit-sweater",
+        "relationship": "independent",
+        "status": "provisional",
+        "rationale": "Primary studio front view representing independent knitwear style baicha-knit-sweater.",
+        "evidence": {
+          "path": "identity-evidence-baicha-knit-sweater.json",
+          "sha256": "1b91babddd6de0c245ffb8b23d69a5969b1c24a671836315eea1c1ec0f853d10"
+        },
+        "risk_class": "business_presentation",
+        "uncertainty": "Excel Sheet2 Row 5 embeds the White Tea (白茶) sweater photo but duplicates the Yunjian Huaxu (云间花叙) product name and description text.",
+        "recommendation": "Publish White Tea Openwork Ribbed Knit Sweater as its own independent product using its 9 verified studio photos and neutral visually-grounded craft description without fabricating unverified fiber specs.",
+        "route": "/products/baicha-knit-sweater",
+        "rollback": "Update product title, specs, or description in huanqiu-admin backend for tenant xgzzfs once customer confirms dedicated copy for 白茶."
+      },
+      {
+        "unit_id": "baicha-knit-sweater-u02",
+        "product_key": "baicha-knit-sweater",
+        "relationship": "multiview",
+        "status": "source_supported",
+        "rationale": "Additional angle/detail studio photograph of the same baicha-knit-sweater garment.",
+        "evidence": {
+          "path": "identity-evidence-baicha-knit-sweater.json",
+          "sha256": "1b91babddd6de0c245ffb8b23d69a5969b1c24a671836315eea1c1ec0f853d10"
+        }
+      },
+      {
+        "unit_id": "baicha-knit-sweater-u03",
+        "product_key": "baicha-knit-sweater",
+        "relationship": "multiview",
+        "status": "source_supported",
+        "rationale": "Additional angle/detail studio photograph of the same baicha-knit-sweater garment.",
+        "evidence": {
+          "path": "identity-evidence-baicha-knit-sweater.json",
+          "sha256": "1b91babddd6de0c245ffb8b23d69a5969b1c24a671836315eea1c1ec0f853d10"
+        }
+      },
+      {
+        "unit_id": "baicha-knit-sweater-u04",
+        "product_key": "baicha-knit-sweater",
+        "relationship": "multiview",
+        "status": "source_supported",
+        "rationale": "Additional angle/detail studio photograph of the same baicha-knit-sweater garment.",
+        "evidence": {
+          "path": "identity-evidence-baicha-knit-sweater.json",
+          "sha256": "1b91babddd6de0c245ffb8b23d69a5969b1c24a671836315eea1c1ec0f853d10"
+        }
+      },
+      {
+        "unit_id": "baicha-knit-sweater-u05",
+        "product_key": "baicha-knit-sweater",
+        "relationship": "multiview",
+        "status": "source_supported",
+        "rationale": "Additional angle/detail studio photograph of the same baicha-knit-sweater garment.",
+        "evidence": {
+          "path": "identity-evidence-baicha-knit-sweater.json",
+          "sha256": "1b91babddd6de0c245ffb8b23d69a5969b1c24a671836315eea1c1ec0f853d10"
+        }
+      },
+      {
+        "unit_id": "baicha-knit-sweater-u06",
+        "product_key": "baicha-knit-sweater",
+        "relationship": "multiview",
+        "status": "source_supported",
+        "rationale": "Additional angle/detail studio photograph of the same baicha-knit-sweater garment.",
+        "evidence": {
+          "path": "identity-evidence-baicha-knit-sweater.json",
+          "sha256": "1b91babddd6de0c245ffb8b23d69a5969b1c24a671836315eea1c1ec0f853d10"
+        }
+      },
+      {
+        "unit_id": "baicha-knit-sweater-u07",
+        "product_key": "baicha-knit-sweater",
+        "relationship": "multiview",
+        "status": "source_supported",
+        "rationale": "Additional angle/detail studio photograph of the same baicha-knit-sweater garment.",
+        "evidence": {
+          "path": "identity-evidence-baicha-knit-sweater.json",
+          "sha256": "1b91babddd6de0c245ffb8b23d69a5969b1c24a671836315eea1c1ec0f853d10"
+        }
+      },
+      {
+        "unit_id": "baicha-knit-sweater-u08",
+        "product_key": "baicha-knit-sweater",
+        "relationship": "multiview",
+        "status": "source_supported",
+        "rationale": "Additional angle/detail studio photograph of the same baicha-knit-sweater garment.",
+        "evidence": {
+          "path": "identity-evidence-baicha-knit-sweater.json",
+          "sha256": "1b91babddd6de0c245ffb8b23d69a5969b1c24a671836315eea1c1ec0f853d10"
+        }
+      },
+      {
+        "unit_id": "baicha-knit-sweater-u09",
+        "product_key": "baicha-knit-sweater",
+        "relationship": "multiview",
+        "status": "source_supported",
+        "rationale": "Additional angle/detail studio photograph of the same baicha-knit-sweater garment.",
+        "evidence": {
+          "path": "identity-evidence-baicha-knit-sweater.json",
+          "sha256": "1b91babddd6de0c245ffb8b23d69a5969b1c24a671836315eea1c1ec0f853d10"
+        }
+      },
+      {
+        "unit_id": "butterfly-knit-base-layer-u01",
+        "product_key": "butterfly-knit-base-layer",
+        "relationship": "independent",
+        "status": "source_supported",
+        "rationale": "Primary studio front view representing independent knitwear style butterfly-knit-base-layer.",
+        "evidence": {
+          "path": "identity-evidence-butterfly-knit-base-layer.json",
+          "sha256": "023858d50e51c728ad66193d4932b9f912f74594aac5730f037da3a2cdb72201"
+        }
+      },
+      {
+        "unit_id": "butterfly-knit-base-layer-u02",
+        "product_key": "butterfly-knit-base-layer",
+        "relationship": "multiview",
+        "status": "source_supported",
+        "rationale": "Additional angle/detail studio photograph of the same butterfly-knit-base-layer garment.",
+        "evidence": {
+          "path": "identity-evidence-butterfly-knit-base-layer.json",
+          "sha256": "023858d50e51c728ad66193d4932b9f912f74594aac5730f037da3a2cdb72201"
+        }
+      },
+      {
+        "unit_id": "butterfly-knit-base-layer-u03",
+        "product_key": "butterfly-knit-base-layer",
+        "relationship": "multiview",
+        "status": "source_supported",
+        "rationale": "Additional angle/detail studio photograph of the same butterfly-knit-base-layer garment.",
+        "evidence": {
+          "path": "identity-evidence-butterfly-knit-base-layer.json",
+          "sha256": "023858d50e51c728ad66193d4932b9f912f74594aac5730f037da3a2cdb72201"
+        }
+      },
+      {
+        "unit_id": "butterfly-knit-base-layer-u04",
+        "product_key": "butterfly-knit-base-layer",
+        "relationship": "multiview",
+        "status": "source_supported",
+        "rationale": "Additional angle/detail studio photograph of the same butterfly-knit-base-layer garment.",
+        "evidence": {
+          "path": "identity-evidence-butterfly-knit-base-layer.json",
+          "sha256": "023858d50e51c728ad66193d4932b9f912f74594aac5730f037da3a2cdb72201"
+        }
+      },
+      {
+        "unit_id": "butterfly-knit-base-layer-u05",
+        "product_key": "butterfly-knit-base-layer",
+        "relationship": "multiview",
+        "status": "source_supported",
+        "rationale": "Additional angle/detail studio photograph of the same butterfly-knit-base-layer garment.",
+        "evidence": {
+          "path": "identity-evidence-butterfly-knit-base-layer.json",
+          "sha256": "023858d50e51c728ad66193d4932b9f912f74594aac5730f037da3a2cdb72201"
+        }
+      },
+      {
+        "unit_id": "butterfly-knit-base-layer-u06",
+        "product_key": "butterfly-knit-base-layer",
+        "relationship": "multiview",
+        "status": "source_supported",
+        "rationale": "Additional angle/detail studio photograph of the same butterfly-knit-base-layer garment.",
+        "evidence": {
+          "path": "identity-evidence-butterfly-knit-base-layer.json",
+          "sha256": "023858d50e51c728ad66193d4932b9f912f74594aac5730f037da3a2cdb72201"
+        }
+      },
+      {
+        "unit_id": "butterfly-knit-base-layer-u07",
+        "product_key": "butterfly-knit-base-layer",
+        "relationship": "multiview",
+        "status": "source_supported",
+        "rationale": "Additional angle/detail studio photograph of the same butterfly-knit-base-layer garment.",
+        "evidence": {
+          "path": "identity-evidence-butterfly-knit-base-layer.json",
+          "sha256": "023858d50e51c728ad66193d4932b9f912f74594aac5730f037da3a2cdb72201"
+        }
+      },
+      {
+        "unit_id": "butterfly-knit-base-layer-u08",
+        "product_key": "butterfly-knit-base-layer",
+        "relationship": "multiview",
+        "status": "source_supported",
+        "rationale": "Additional angle/detail studio photograph of the same butterfly-knit-base-layer garment.",
+        "evidence": {
+          "path": "identity-evidence-butterfly-knit-base-layer.json",
+          "sha256": "023858d50e51c728ad66193d4932b9f912f74594aac5730f037da3a2cdb72201"
+        }
+      },
+      {
+        "unit_id": "butterfly-knit-base-layer-u09",
+        "product_key": "butterfly-knit-base-layer",
+        "relationship": "multiview",
+        "status": "source_supported",
+        "rationale": "Additional angle/detail studio photograph of the same butterfly-knit-base-layer garment.",
+        "evidence": {
+          "path": "identity-evidence-butterfly-knit-base-layer.json",
+          "sha256": "023858d50e51c728ad66193d4932b9f912f74594aac5730f037da3a2cdb72201"
+        }
+      },
+      {
+        "unit_id": "butterfly-knit-base-layer-u10",
+        "product_key": "butterfly-knit-base-layer",
+        "relationship": "multiview",
+        "status": "source_supported",
+        "rationale": "Additional angle/detail studio photograph of the same butterfly-knit-base-layer garment.",
+        "evidence": {
+          "path": "identity-evidence-butterfly-knit-base-layer.json",
+          "sha256": "023858d50e51c728ad66193d4932b9f912f74594aac5730f037da3a2cdb72201"
+        }
+      }
+    ]
+  },
+  "product_media": [
+    {
+      "product_key": "yunjian-huaxu-cardigan",
+      "media_status": "mapped",
+      "mapping_basis": "exact_folder_label",
+      "mapping_evidence": "Folder 产品图片/云间花叙 matches Excel Sheet2 Row 7 product code 云间花叙 (Raspberry & Off-White colorways).",
+      "cover_asset": "产品图片/云间花叙/1 (1).jpg",
+      "gallery_assets": [
+        "产品图片/云间花叙/1 (10).jpg",
+        "产品图片/云间花叙/1 (11).jpg",
+        "产品图片/云间花叙/1 (12).jpg",
+        "产品图片/云间花叙/1 (2).jpg",
+        "产品图片/云间花叙/1 (3).jpg",
+        "产品图片/云间花叙/1 (4).jpg",
+        "产品图片/云间花叙/1 (5).jpg",
+        "产品图片/云间花叙/1 (6).jpg",
+        "产品图片/云间花叙/1 (7).jpg",
+        "产品图片/云间花叙/1 (8).jpg",
+        "产品图片/云间花叙/1 (9).jpg"
+      ],
+      "excluded_assets": []
+    },
+    {
+      "product_key": "baicha-knit-sweater",
+      "media_status": "mapped",
+      "mapping_basis": "exact_folder_label",
+      "mapping_evidence": "Folder 产品图片/白茶 contains 9 studio photos of the off-white openwork ribbed knit sweater matching Excel Row 5 embedded image2.jpeg.",
+      "cover_asset": "产品图片/白茶/0-正面图 (2).jpg",
+      "gallery_assets": [
+        "产品图片/白茶/0-正面图 (3).jpg",
+        "产品图片/白茶/细节图 (1).jpg",
+        "产品图片/白茶/细节图 (2).jpg",
+        "产品图片/白茶/细节图 (3).jpg",
+        "产品图片/白茶/细节图 (4).jpg",
+        "产品图片/白茶/细节图 (5).jpg",
+        "产品图片/白茶/细节图 (6).jpg",
+        "产品图片/白茶/背面图.jpg"
+      ],
+      "excluded_assets": []
+    },
+    {
+      "product_key": "butterfly-knit-base-layer",
+      "media_status": "mapped",
+      "mapping_basis": "exact_folder_label",
+      "mapping_evidence": "Folder 产品图片/蝴蝶打底衫 matches Excel Sheet2 Row 6 product code 蝴蝶打底衫 (Off-White 3D embossed butterfly base layer).",
+      "cover_asset": "产品图片/蝴蝶打底衫/0.jpg",
+      "gallery_assets": [
+        "产品图片/蝴蝶打底衫/1 (1).jpg",
+        "产品图片/蝴蝶打底衫/1 (2).jpg",
+        "产品图片/蝴蝶打底衫/1 (3).jpg",
+        "产品图片/蝴蝶打底衫/1 (4).jpg",
+        "产品图片/蝴蝶打底衫/1 (5).jpg",
+        "产品图片/蝴蝶打底衫/1 (6).jpg",
+        "产品图片/蝴蝶打底衫/1 (7).jpg",
+        "产品图片/蝴蝶打底衫/1 (8).jpg",
+        "产品图片/蝴蝶打底衫/1 (9).jpg"
+      ],
+      "excluded_assets": []
+    }
+  ],
+  "product_content": [
+    {
+      "product_key": "yunjian-huaxu-cardigan",
+      "field_audit": {
+        "status": "audited",
+        "sources_checked": [
+          "官网资料&产品&FQA收集表.xlsx#产品信息!A5:I7",
+          "产品图片/云间花叙"
+        ],
+        "source_nonempty_business_field_count": 5
+      },
+      "provided_fields": [
+        {
+          "field_key": "name",
+          "source_locator": "产品信息!D7:E7",
+          "source_hash": "sha256:3c9492101ed8e99ae111248e09dc03b188dc176d01c1a24591c5325765fbe716",
+          "disposition": "publish"
+        },
+        {
+          "field_key": "category",
+          "source_locator": "产品信息!B7:C7",
+          "source_hash": "sha256:25b9750ff6414cdf8a2f1f5f76328c7bb903d8be202ee18018344fff4b25c4db",
+          "disposition": "publish"
+        },
+        {
+          "field_key": "description",
+          "source_locator": "产品信息!F7",
+          "source_hash": "sha256:e2fb0a7e5a8bb0a4fef60d1325ea3f400f67f6dadba0cef60e25bf27c869e9c7",
+          "disposition": "publish"
+        },
+        {
+          "field_key": "specifications",
+          "source_locator": "产品信息!H7",
+          "source_hash": "sha256:fc84466d76cc1a559fa277f82f620c611c6887ddf705ea6b8fc01ecbbb727a31",
+          "disposition": "publish"
+        },
+        {
+          "field_key": "reference_usd_price",
+          "source_locator": "产品信息!I7",
+          "source_hash": "sha256:c75cb66ae28d8ebc6eded002c28a8ba0d06d3a78c6b5cbf9b2ade051f0775ac4",
+          "disposition": "backend_only",
+          "reason_code": "legal_or_policy_prohibited",
+          "reason": "B2B OEM/ODM inquiry website prohibits displaying public retail prices on storefront; kept in backend internal notes for quotation reference.",
+          "decision_evidence": "implementation.md B2B inquiry policy (no public pricing/cart/checkout)."
+        }
+      ],
+      "description": {
+        "source_status": "provided",
+        "source_locator": "产品信息!F7",
+        "source_hash": "sha256:e2fb0a7e5a8bb0a4fef60d1325ea3f400f67f6dadba0cef60e25bf27c869e9c7"
+      },
+      "specifications": {
+        "source_status": "provided",
+        "source_locator": "产品信息!H7",
+        "source_keys": [
+          "Colors",
+          "Size",
+          "Craftsmanship",
+          "MOQ"
+        ]
+      }
+    },
+    {
+      "product_key": "baicha-knit-sweater",
+      "field_audit": {
+        "status": "audited",
+        "sources_checked": [
+          "官网资料&产品&FQA收集表.xlsx#产品信息!A5:I5",
+          "产品图片/白茶"
+        ],
+        "source_nonempty_business_field_count": 3
+      },
+      "provided_fields": [
+        {
+          "field_key": "name",
+          "source_locator": "产品图片/白茶",
+          "source_hash": "sha256:bbf561a4078bf01abc625d9b8beef5c9a2519f2cc71df6818a67bd373f299bd6",
+          "disposition": "publish"
+        },
+        {
+          "field_key": "category",
+          "source_locator": "企业资料!C8 + 产品图片/白茶",
+          "source_hash": "sha256:d0bf38c8e187905110ff08dae6781ab4ec6ea8d0f5aae43f4772c699d9cdaba3",
+          "disposition": "publish"
+        },
+        {
+          "field_key": "specifications",
+          "source_locator": "产品图片/白茶 + FAQ!D4,D11",
+          "source_hash": "sha256:f3e9178d8fc3db89a1c5eb58c5a1bd80d6a17a7e81d6a79b1e7813a01ed0c5d1",
+          "disposition": "publish"
+        }
+      ],
+      "description": {
+        "source_status": "not_provided",
+        "reason": "Excel Row 5 mistakenly duplicated Yunjian Huaxu text on White Tea image; neutral visual-fact description published as provisional pending customer confirmation."
+      },
+      "specifications": {
+        "source_status": "provided",
+        "source_locator": "产品图片/白茶 + FAQ!D4,D11",
+        "source_keys": [
+          "Color",
+          "Size",
+          "Knit Structure",
+          "MOQ"
+        ]
+      }
+    },
+    {
+      "product_key": "butterfly-knit-base-layer",
+      "field_audit": {
+        "status": "audited",
+        "sources_checked": [
+          "官网资料&产品&FQA收集表.xlsx#产品信息!A6:I6",
+          "产品图片/蝴蝶打底衫"
+        ],
+        "source_nonempty_business_field_count": 5
+      },
+      "provided_fields": [
+        {
+          "field_key": "name",
+          "source_locator": "产品信息!D6:E6",
+          "source_hash": "sha256:533fea1793d4ef40628df5fd00b905d4dcaae8808495ab1eb5ce5728d8492f09",
+          "disposition": "publish"
+        },
+        {
+          "field_key": "category",
+          "source_locator": "产品信息!B6:C6",
+          "source_hash": "sha256:533fea1793d4ef40628df5fd00b905d4dcaae8808495ab1eb5ce5728d8492f09",
+          "disposition": "publish"
+        },
+        {
+          "field_key": "description",
+          "source_locator": "产品信息!F6",
+          "source_hash": "sha256:9393da297fa4b8d7367fb3466bece5e6a709b3db96cb0cc8cf094fcfc0666e4d",
+          "disposition": "publish"
+        },
+        {
+          "field_key": "specifications",
+          "source_locator": "产品信息!H6",
+          "source_hash": "sha256:fc7c73cac2ffefa72f815554f70ebee9a13a2076531a4c459eeba7f45cca62da",
+          "disposition": "publish"
+        },
+        {
+          "field_key": "reference_usd_price",
+          "source_locator": "产品信息!I6",
+          "source_hash": "sha256:38edf60d3275ec8152ac982192a9f84fdb3d27b3fe8fcf81cf2cc1815ed863b6",
+          "disposition": "backend_only",
+          "reason_code": "legal_or_policy_prohibited",
+          "reason": "B2B OEM/ODM inquiry website prohibits displaying public retail prices on storefront; kept in backend internal notes for quotation reference.",
+          "decision_evidence": "implementation.md B2B inquiry policy (no public pricing/cart/checkout)."
+        }
+      ],
+      "description": {
+        "source_status": "provided",
+        "source_locator": "产品信息!F6",
+        "source_hash": "sha256:9393da297fa4b8d7367fb3466bece5e6a709b3db96cb0cc8cf094fcfc0666e4d"
+      },
+      "specifications": {
+        "source_status": "provided",
+        "source_locator": "产品信息!H6",
+        "source_keys": [
+          "Color",
+          "Size",
+          "Craftsmanship",
+          "MOQ"
+        ]
+      }
+    }
+  ]
+}

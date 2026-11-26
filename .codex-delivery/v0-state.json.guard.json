@@ -1,0 +1,28 @@
+{
+  "attempts": [
+    {
+      "id": "85b3ed76-aaf1-4ce0-9bdd-fef7e34fb7f1",
+      "fingerprint": "2827082f3628c83391bef17c9787a12ff30a25d6b03dbca4fb8faabbda483223",
+      "purpose": "initial",
+      "scope": [
+        "Home (9 sections + Three.js 7G Knit Studio)",
+        "Products",
+        "Product detail",
+        "Manufacturing",
+        "About",
+        "News",
+        "Contact + CAPTCHA RFQ",
+        "responsive motion"
+      ],
+      "missing_files": [],
+      "chat_id": "voKBiKk94il",
+      "sent_at": "2026-11-26T09:37:28.241Z",
+      "pending": true,
+      "reserved_usd": 7,
+      "cost_usd": null,
+      "message_id": "He07vtR7L5q4RrdRMS0o2ZnH1BchoMhe",
+      "received_at": "2026-11-26T09:37:37.426Z"
+    }
+  ],
+  "legacy_recovery_count": 0
+}

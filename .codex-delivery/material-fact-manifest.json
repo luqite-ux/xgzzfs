@@ -1,0 +1,1633 @@
+{
+  "schema_version": 1,
+  "customer": "苏州西宫针织服饰有限公司",
+  "tenant_id": null,
+  "material_roots": [
+    "E:\\E暂存\\苏州西宫针织服饰有限公司"
+  ],
+  "sources": [
+    {
+      "source_id": "src-txt-domain-email",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\域名+邮箱.txt",
+      "type": "text",
+      "fingerprint": "sha256:eca65ff87a60408f49efcbd6b6acc193eae4bc107c0ec4228f1f7231aaf33c0e",
+      "decision": "extract",
+      "extraction_evidence": "Read UTF-8 file directly; contains formal domain xgzzfs.com and formal email info@xgzzfs.com.",
+      "units": [
+        {
+          "unit_id": "u-domain",
+          "locator": "域名+邮箱.txt:line1",
+          "decision": "fact",
+          "fact_ids": [
+            "f-formal-domain"
+          ]
+        },
+        {
+          "unit_id": "u-email",
+          "locator": "域名+邮箱.txt:line2",
+          "decision": "fact",
+          "fact_ids": [
+            "f-formal-email"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "src-xlsx-main",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\官网资料&产品&FQA收集表.xlsx",
+      "type": "spreadsheet",
+      "fingerprint": "sha256:e917a2dd8cc3eebfc18aea8c742af606f6c8b54a74ddb71daea4f0c7f27923c5",
+      "decision": "extract",
+      "extraction_evidence": "Full XML parsing of sheet1-3 (企业资料, 产品信息, FAQ问题) + extraction and visual inspection of all 4 xl/media/*.jpeg cell images.",
+      "units": [
+        {
+          "unit_id": "u-company-zh",
+          "locator": "企业资料!C3",
+          "decision": "fact",
+          "fact_ids": [
+            "f-company-zh"
+          ]
+        },
+        {
+          "unit_id": "u-company-en",
+          "locator": "企业资料!C9,C11",
+          "decision": "fact",
+          "fact_ids": [
+            "f-company-en"
+          ]
+        },
+        {
+          "unit_id": "u-address",
+          "locator": "企业资料!C4",
+          "decision": "fact",
+          "fact_ids": [
+            "f-address"
+          ]
+        },
+        {
+          "unit_id": "u-phone",
+          "locator": "企业资料!C6",
+          "decision": "fact",
+          "fact_ids": [
+            "f-phone"
+          ]
+        },
+        {
+          "unit_id": "u-qq-email",
+          "locator": "企业资料!C7",
+          "decision": "excluded_by_rule",
+          "reason": "Personal QQ email (363262134@qq.com) for registering corporate email; superseded by formal corporate email info@xgzzfs.com in 域名+邮箱.txt."
+        },
+        {
+          "unit_id": "u-categories",
+          "locator": "企业资料!C8",
+          "decision": "fact",
+          "fact_ids": [
+            "f-categories"
+          ]
+        },
+        {
+          "unit_id": "u-profile-founded",
+          "locator": "企业资料!C15",
+          "decision": "fact",
+          "fact_ids": [
+            "f-founded",
+            "f-factory-area",
+            "f-equipment",
+            "f-monthly-capacity",
+            "f-lead-time",
+            "f-oem-odm"
+          ]
+        },
+        {
+          "unit_id": "u-prod-yunjian",
+          "locator": "产品信息!A7:H7",
+          "decision": "fact",
+          "fact_ids": [
+            "f-prod-yunjian-desc",
+            "f-prod-yunjian-spec"
+          ]
+        },
+        {
+          "unit_id": "u-prod-butterfly",
+          "locator": "产品信息!A6:H6",
+          "decision": "fact",
+          "fact_ids": [
+            "f-prod-butterfly-desc",
+            "f-prod-butterfly-spec"
+          ]
+        },
+        {
+          "unit_id": "u-prod-row5-dup",
+          "locator": "产品信息!A5:F5",
+          "decision": "duplicate",
+          "reason": "Row 5 text duplicates Row 7 云间花叙 copy while embedding 白茶 image2.jpeg; reconciled in product_identity."
+        },
+        {
+          "unit_id": "u-faq-all",
+          "locator": "FAQ问题!A4:D29",
+          "decision": "fact",
+          "fact_ids": [
+            "f-faq-moq",
+            "f-faq-samples",
+            "f-faq-production",
+            "f-faq-qc"
+          ]
+        },
+        {
+          "unit_id": "u-faq-warranty",
+          "locator": "FAQ问题!B30:D30",
+          "decision": "excluded_by_rule",
+          "reason": "Company hard rule prohibits warranty/guarantee wording; customer answered 无 (no warranty period)."
+        }
+      ],
+      "container_media_scan": {
+        "result": "PASS",
+        "evidence": "Enumerated all 4 entries under xl/media/* via System.IO.Compression and mapped every DISPIMG anchor in xl/cellimages.xml.",
+        "embedded_media": [
+          {
+            "media_id": "em-license",
+            "container_path": "xl/media/image1.jpeg",
+            "locator": "企业资料!C20",
+            "fingerprint": "sha256:04e91b30d42226ad24b63c03df90c7cc6de72d1e134669d83693c109dd2bbea8",
+            "decision": "excluded_by_rule",
+            "reason_code": "privacy_sensitive",
+            "reason": "PRC Business License contains legal representative personal name (沈清晨), Unified Social Credit Code, QR verification code, and digital signature; unsuitable for public display.",
+            "evidence": "Direct visual inspection of extracted xl/media/image1.jpeg; company facts (name, founded 2014, address) extracted into verified facts.",
+            "source_binding": {
+              "sheet": "企业资料",
+              "cell_range": "C20",
+              "drawing_anchor": "cellimages.xml#ID_3A8988847C3B4ED98473238E35CA7460",
+              "entity_type": "company",
+              "entity_key": "suzhou-xigong",
+              "evidence": "xl/worksheets/sheet1.xml C20 DISPIMG formula mapped via xl/cellimages.xml to xl/media/image1.jpeg."
+            }
+          },
+          {
+            "media_id": "em-baicha",
+            "container_path": "xl/media/image2.jpeg",
+            "locator": "产品信息!G5",
+            "fingerprint": "sha256:6a00e36b5b77dc051b6f598330e16712dd9e8898f107b6dab50fa5e66d0358bc",
+            "decision": "use",
+            "extracted_path": "extracted-media/image2.jpeg",
+            "extraction_evidence": "Extracted xl/media/image2.jpeg (2048x2048) via System.IO.Compression and visually verified as White Tea openwork ribbed knit sweater back view.",
+            "expected_destinations": [
+              "r2",
+              "backend",
+              "frontend"
+            ],
+            "semantic_destination": "/products/baicha-knit-sweater",
+            "business_entity": "baicha-knit-sweater",
+            "placement_reason": "High-resolution 2048x2048 embedded Excel studio photo published in White Tea Knit Sweater detail gallery.",
+            "source_binding": {
+              "sheet": "产品信息",
+              "cell_range": "G5",
+              "drawing_anchor": "cellimages.xml#ID_F18D7B0A2BB94598ADADF6EE33B77003",
+              "entity_type": "product",
+              "entity_key": "baicha-knit-sweater",
+              "evidence": "xl/worksheets/sheet2.xml G5 DISPIMG formula mapped via xl/cellimages.xml (descr=背面图) to xl/media/image2.jpeg."
+            }
+          },
+          {
+            "media_id": "em-butterfly",
+            "container_path": "xl/media/image3.jpeg",
+            "locator": "产品信息!G6",
+            "fingerprint": "sha256:abb6bfe41420031cce23b9e6d20a8749912391a891e1826741669d7bb55f0aa9",
+            "decision": "use",
+            "extracted_path": "extracted-media/image3.jpeg",
+            "extraction_evidence": "Extracted xl/media/image3.jpeg (2048x2048) via System.IO.Compression and visually verified as 3D Butterfly Hollow-Out Knit Base Layer front view.",
+            "expected_destinations": [
+              "r2",
+              "backend",
+              "frontend"
+            ],
+            "semantic_destination": "/products/butterfly-knit-base-layer",
+            "business_entity": "butterfly-knit-base-layer",
+            "placement_reason": "High-resolution 2048x2048 embedded Excel studio photo published in 3D Butterfly Hollow-Out Knit Base Layer detail gallery.",
+            "source_binding": {
+              "sheet": "产品信息",
+              "cell_range": "G6",
+              "drawing_anchor": "cellimages.xml#ID_6ACC54FAB57F4648B69C6CEAA3966666",
+              "entity_type": "product",
+              "entity_key": "butterfly-knit-base-layer",
+              "evidence": "xl/worksheets/sheet2.xml G6 DISPIMG formula mapped via xl/cellimages.xml (descr=1 (1)) to xl/media/image3.jpeg."
+            }
+          },
+          {
+            "media_id": "em-yunjian",
+            "container_path": "xl/media/image4.jpeg",
+            "locator": "产品信息!G7",
+            "fingerprint": "sha256:ab68972ac73b008d6ec805127a434bb66c46374745bf87956fcb74380067d605",
+            "decision": "use",
+            "extracted_path": "extracted-media/image4.jpeg",
+            "extraction_evidence": "Extracted xl/media/image4.jpeg (2048x2048) via System.IO.Compression and visually verified as Yunjian Huaxu raspberry embroidered cardigan.",
+            "expected_destinations": [
+              "r2",
+              "backend",
+              "frontend"
+            ],
+            "semantic_destination": "/products/yunjian-huaxu-cardigan",
+            "business_entity": "yunjian-huaxu-cardigan",
+            "placement_reason": "High-resolution 2048x2048 embedded Excel studio photo published in Yunjian Huaxu Hand-Embroidered Wool Knit Cardigan detail gallery.",
+            "source_binding": {
+              "sheet": "产品信息",
+              "cell_range": "G7",
+              "drawing_anchor": "cellimages.xml#ID_543293BDC4F949D885EA0CC175B7C5DF",
+              "entity_type": "product",
+              "entity_key": "yunjian-huaxu-cardigan",
+              "evidence": "xl/worksheets/sheet2.xml G7 DISPIMG formula mapped via xl/cellimages.xml to xl/media/image4.jpeg."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "source_id": "src-img-01",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\banner背景图\\1.jpg",
+      "type": "image",
+      "fingerprint": "sha256:cf91ce7c4bd235a4effb8b4f50f4ceeb9661b9fcef702ffe0e1db3cd9a9f2e13",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected banner背景图/1.jpg (3840x1600, 2408787 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-01",
+        "locator": "banner背景图/1.jpg",
+        "fingerprint": "sha256:cf91ce7c4bd235a4effb8b4f50f4ceeb9661b9fcef702ffe0e1db3cd9a9f2e13",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "frontend"
+        ],
+        "semantic_destination": "/#hero-carousel",
+        "business_entity": "suzhou-xigong-hero-banner",
+        "placement_reason": "Customer-supplied 3840x1600 hero banner (1.jpg) directly adopted into homepage hero carousel."
+      }
+    },
+    {
+      "source_id": "src-img-02",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\banner背景图\\2.jpg",
+      "type": "image",
+      "fingerprint": "sha256:532017a56c9cd0f68f251d93d9c59039f2e9607021c047164f81f28690cf1efc",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected banner背景图/2.jpg (3840x1600, 1736810 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-02",
+        "locator": "banner背景图/2.jpg",
+        "fingerprint": "sha256:532017a56c9cd0f68f251d93d9c59039f2e9607021c047164f81f28690cf1efc",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "frontend"
+        ],
+        "semantic_destination": "/#hero-carousel",
+        "business_entity": "suzhou-xigong-hero-banner",
+        "placement_reason": "Customer-supplied 3840x1600 hero banner (2.jpg) directly adopted into homepage hero carousel."
+      }
+    },
+    {
+      "source_id": "src-img-03",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\banner背景图\\3.jpg",
+      "type": "image",
+      "fingerprint": "sha256:4cfd057cf444825d0a8ab5f760bff676ac0fe0811ef7c3d0a54daa8419f75098",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected banner背景图/3.jpg (3840x1600, 2173907 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-03",
+        "locator": "banner背景图/3.jpg",
+        "fingerprint": "sha256:4cfd057cf444825d0a8ab5f760bff676ac0fe0811ef7c3d0a54daa8419f75098",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "frontend"
+        ],
+        "semantic_destination": "/#hero-carousel",
+        "business_entity": "suzhou-xigong-hero-banner",
+        "placement_reason": "Customer-supplied 3840x1600 hero banner (3.jpg) directly adopted into homepage hero carousel."
+      }
+    },
+    {
+      "source_id": "src-img-04",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\云间花叙\\1 (1).jpg",
+      "type": "image",
+      "fingerprint": "sha256:4614dcabd289719e56dd42715984047ad2c8dfc1cf990a283125965d942eddc4",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 产品图片/云间花叙/1 (1).jpg (2000x2000, 576808 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-04",
+        "locator": "产品图片/云间花叙/1 (1).jpg",
+        "fingerprint": "sha256:4614dcabd289719e56dd42715984047ad2c8dfc1cf990a283125965d942eddc4",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "backend",
+          "frontend"
+        ],
+        "semantic_destination": "/products/yunjian-huaxu-cardigan",
+        "business_entity": "yunjian-huaxu-cardigan",
+        "placement_reason": "Product studio photography for Yunjian Huaxu Hand-Embroidered Wool Knit Cardigan."
+      }
+    },
+    {
+      "source_id": "src-img-05",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\云间花叙\\1 (10).jpg",
+      "type": "image",
+      "fingerprint": "sha256:f3e6a0337c9a85c6e0d9cac26f762d8c87342d490d4d08445f3acbbd3830e024",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 产品图片/云间花叙/1 (10).jpg (2000x2000, 594328 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-05",
+        "locator": "产品图片/云间花叙/1 (10).jpg",
+        "fingerprint": "sha256:f3e6a0337c9a85c6e0d9cac26f762d8c87342d490d4d08445f3acbbd3830e024",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "backend",
+          "frontend"
+        ],
+        "semantic_destination": "/products/yunjian-huaxu-cardigan",
+        "business_entity": "yunjian-huaxu-cardigan",
+        "placement_reason": "Product studio photography for Yunjian Huaxu Hand-Embroidered Wool Knit Cardigan."
+      }
+    },
+    {
+      "source_id": "src-img-06",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\云间花叙\\1 (11).jpg",
+      "type": "image",
+      "fingerprint": "sha256:824a064ae213d23d29eff5ce0dec8893f8bc416e22b2c2a3f260d0334af16fa8",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 产品图片/云间花叙/1 (11).jpg (2000x2000, 477242 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-06",
+        "locator": "产品图片/云间花叙/1 (11).jpg",
+        "fingerprint": "sha256:824a064ae213d23d29eff5ce0dec8893f8bc416e22b2c2a3f260d0334af16fa8",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "backend",
+          "frontend"
+        ],
+        "semantic_destination": "/products/yunjian-huaxu-cardigan",
+        "business_entity": "yunjian-huaxu-cardigan",
+        "placement_reason": "Product studio photography for Yunjian Huaxu Hand-Embroidered Wool Knit Cardigan."
+      }
+    },
+    {
+      "source_id": "src-img-07",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\云间花叙\\1 (12).jpg",
+      "type": "image",
+      "fingerprint": "sha256:bd9ecc3bd29029db258b7b1a891d9eab15554a314237ebf8e8f8132856c13cce",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 产品图片/云间花叙/1 (12).jpg (2000x2000, 593578 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-07",
+        "locator": "产品图片/云间花叙/1 (12).jpg",
+        "fingerprint": "sha256:bd9ecc3bd29029db258b7b1a891d9eab15554a314237ebf8e8f8132856c13cce",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "backend",
+          "frontend"
+        ],
+        "semantic_destination": "/products/yunjian-huaxu-cardigan",
+        "business_entity": "yunjian-huaxu-cardigan",
+        "placement_reason": "Product studio photography for Yunjian Huaxu Hand-Embroidered Wool Knit Cardigan."
+      }
+    },
+    {
+      "source_id": "src-img-08",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\云间花叙\\1 (2).jpg",
+      "type": "image",
+      "fingerprint": "sha256:0e68265859cd84e28a1d4940c93e3fc3988301b5968572d43d26bfd68aea5b88",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 产品图片/云间花叙/1 (2).jpg (2000x2000, 559139 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-08",
+        "locator": "产品图片/云间花叙/1 (2).jpg",
+        "fingerprint": "sha256:0e68265859cd84e28a1d4940c93e3fc3988301b5968572d43d26bfd68aea5b88",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "backend",
+          "frontend"
+        ],
+        "semantic_destination": "/products/yunjian-huaxu-cardigan",
+        "business_entity": "yunjian-huaxu-cardigan",
+        "placement_reason": "Product studio photography for Yunjian Huaxu Hand-Embroidered Wool Knit Cardigan."
+      }
+    },
+    {
+      "source_id": "src-img-09",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\云间花叙\\1 (3).jpg",
+      "type": "image",
+      "fingerprint": "sha256:14fc66020ac48cc4690bcd3d4b3bec4a05eeab6238e3e8b4522ec65ef67df588",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 产品图片/云间花叙/1 (3).jpg (2000x2000, 738267 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-09",
+        "locator": "产品图片/云间花叙/1 (3).jpg",
+        "fingerprint": "sha256:14fc66020ac48cc4690bcd3d4b3bec4a05eeab6238e3e8b4522ec65ef67df588",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "backend",
+          "frontend"
+        ],
+        "semantic_destination": "/products/yunjian-huaxu-cardigan",
+        "business_entity": "yunjian-huaxu-cardigan",
+        "placement_reason": "Product studio photography for Yunjian Huaxu Hand-Embroidered Wool Knit Cardigan."
+      }
+    },
+    {
+      "source_id": "src-img-10",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\云间花叙\\1 (4).jpg",
+      "type": "image",
+      "fingerprint": "sha256:94991e084e65a4a4c41ce91a2ed51f0d63f76c36e3e7d348f626cc4e4d651252",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 产品图片/云间花叙/1 (4).jpg (2000x2000, 799620 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-10",
+        "locator": "产品图片/云间花叙/1 (4).jpg",
+        "fingerprint": "sha256:94991e084e65a4a4c41ce91a2ed51f0d63f76c36e3e7d348f626cc4e4d651252",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "backend",
+          "frontend"
+        ],
+        "semantic_destination": "/products/yunjian-huaxu-cardigan",
+        "business_entity": "yunjian-huaxu-cardigan",
+        "placement_reason": "Product studio photography for Yunjian Huaxu Hand-Embroidered Wool Knit Cardigan."
+      }
+    },
+    {
+      "source_id": "src-img-11",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\云间花叙\\1 (5).jpg",
+      "type": "image",
+      "fingerprint": "sha256:5f248ffb94f76728e9e15f32068f4733cf909edabdfe78463f5adccdcab38fc2",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 产品图片/云间花叙/1 (5).jpg (2000x2000, 645955 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-11",
+        "locator": "产品图片/云间花叙/1 (5).jpg",
+        "fingerprint": "sha256:5f248ffb94f76728e9e15f32068f4733cf909edabdfe78463f5adccdcab38fc2",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "backend",
+          "frontend"
+        ],
+        "semantic_destination": "/products/yunjian-huaxu-cardigan",
+        "business_entity": "yunjian-huaxu-cardigan",
+        "placement_reason": "Product studio photography for Yunjian Huaxu Hand-Embroidered Wool Knit Cardigan."
+      }
+    },
+    {
+      "source_id": "src-img-12",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\云间花叙\\1 (6).jpg",
+      "type": "image",
+      "fingerprint": "sha256:18ecc6726ed531060dfa459f16cb0a4dd2084cf3d57ec4d10aaa1ce60108d3a3",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 产品图片/云间花叙/1 (6).jpg (2000x2000, 975927 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-12",
+        "locator": "产品图片/云间花叙/1 (6).jpg",
+        "fingerprint": "sha256:18ecc6726ed531060dfa459f16cb0a4dd2084cf3d57ec4d10aaa1ce60108d3a3",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "backend",
+          "frontend"
+        ],
+        "semantic_destination": "/products/yunjian-huaxu-cardigan",
+        "business_entity": "yunjian-huaxu-cardigan",
+        "placement_reason": "Product studio photography for Yunjian Huaxu Hand-Embroidered Wool Knit Cardigan."
+      }
+    },
+    {
+      "source_id": "src-img-13",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\云间花叙\\1 (7).jpg",
+      "type": "image",
+      "fingerprint": "sha256:56e835a14d06bc8290a4a845a68333ea46ec97606768fa19baa6f161f3d40245",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 产品图片/云间花叙/1 (7).jpg (2000x2000, 562480 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-13",
+        "locator": "产品图片/云间花叙/1 (7).jpg",
+        "fingerprint": "sha256:56e835a14d06bc8290a4a845a68333ea46ec97606768fa19baa6f161f3d40245",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "backend",
+          "frontend"
+        ],
+        "semantic_destination": "/products/yunjian-huaxu-cardigan",
+        "business_entity": "yunjian-huaxu-cardigan",
+        "placement_reason": "Product studio photography for Yunjian Huaxu Hand-Embroidered Wool Knit Cardigan."
+      }
+    },
+    {
+      "source_id": "src-img-14",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\云间花叙\\1 (8).jpg",
+      "type": "image",
+      "fingerprint": "sha256:4cfb7578f8016ea21ff15837f2d2c2d3e72f0ec19271bc5ea3f16418e43ecd36",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 产品图片/云间花叙/1 (8).jpg (2000x2000, 402857 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-14",
+        "locator": "产品图片/云间花叙/1 (8).jpg",
+        "fingerprint": "sha256:4cfb7578f8016ea21ff15837f2d2c2d3e72f0ec19271bc5ea3f16418e43ecd36",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "backend",
+          "frontend"
+        ],
+        "semantic_destination": "/products/yunjian-huaxu-cardigan",
+        "business_entity": "yunjian-huaxu-cardigan",
+        "placement_reason": "Product studio photography for Yunjian Huaxu Hand-Embroidered Wool Knit Cardigan."
+      }
+    },
+    {
+      "source_id": "src-img-15",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\云间花叙\\1 (9).jpg",
+      "type": "image",
+      "fingerprint": "sha256:ef8f0b2c3593c27ef943ebc303819b53c5023af9d85f014bd96667332ddf07fa",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 产品图片/云间花叙/1 (9).jpg (2000x2000, 475441 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-15",
+        "locator": "产品图片/云间花叙/1 (9).jpg",
+        "fingerprint": "sha256:ef8f0b2c3593c27ef943ebc303819b53c5023af9d85f014bd96667332ddf07fa",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "backend",
+          "frontend"
+        ],
+        "semantic_destination": "/products/yunjian-huaxu-cardigan",
+        "business_entity": "yunjian-huaxu-cardigan",
+        "placement_reason": "Product studio photography for Yunjian Huaxu Hand-Embroidered Wool Knit Cardigan."
+      }
+    },
+    {
+      "source_id": "src-img-16",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\白茶\\0-正面图 (2).jpg",
+      "type": "image",
+      "fingerprint": "sha256:6ffc832aa11d63241c76d7bd4009aeb0e08c3bb9b466924b455684e25acbdcd6",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 产品图片/白茶/0-正面图 (2).jpg (2000x2000, 605088 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-16",
+        "locator": "产品图片/白茶/0-正面图 (2).jpg",
+        "fingerprint": "sha256:6ffc832aa11d63241c76d7bd4009aeb0e08c3bb9b466924b455684e25acbdcd6",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "backend",
+          "frontend"
+        ],
+        "semantic_destination": "/products/baicha-knit-sweater",
+        "business_entity": "baicha-knit-sweater",
+        "placement_reason": "Product studio photography for White Tea Openwork Ribbed Knit Sweater."
+      }
+    },
+    {
+      "source_id": "src-img-17",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\白茶\\0-正面图 (3).jpg",
+      "type": "image",
+      "fingerprint": "sha256:8d515bd565f9183615e603d61c282db6e675d26a15cbf1b365d5c333b0dfa9de",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 产品图片/白茶/0-正面图 (3).jpg (2000x2000, 556510 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-17",
+        "locator": "产品图片/白茶/0-正面图 (3).jpg",
+        "fingerprint": "sha256:8d515bd565f9183615e603d61c282db6e675d26a15cbf1b365d5c333b0dfa9de",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "backend",
+          "frontend"
+        ],
+        "semantic_destination": "/products/baicha-knit-sweater",
+        "business_entity": "baicha-knit-sweater",
+        "placement_reason": "Product studio photography for White Tea Openwork Ribbed Knit Sweater."
+      }
+    },
+    {
+      "source_id": "src-img-18",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\白茶\\细节图 (1).jpg",
+      "type": "image",
+      "fingerprint": "sha256:1593e3cb7bf9b3dba6b24ace51a95f904c2bccc331b91f9eb8b8dce5fe7048b4",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 产品图片/白茶/细节图 (1).jpg (2000x2000, 639783 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-18",
+        "locator": "产品图片/白茶/细节图 (1).jpg",
+        "fingerprint": "sha256:1593e3cb7bf9b3dba6b24ace51a95f904c2bccc331b91f9eb8b8dce5fe7048b4",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "backend",
+          "frontend"
+        ],
+        "semantic_destination": "/products/baicha-knit-sweater",
+        "business_entity": "baicha-knit-sweater",
+        "placement_reason": "Product studio photography for White Tea Openwork Ribbed Knit Sweater."
+      }
+    },
+    {
+      "source_id": "src-img-19",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\白茶\\细节图 (2).jpg",
+      "type": "image",
+      "fingerprint": "sha256:c214fbee6e080d7438b13b0d374adbdcf6a408e309a7d01541ff19df13e7ee9c",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 产品图片/白茶/细节图 (2).jpg (2000x2000, 649596 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-19",
+        "locator": "产品图片/白茶/细节图 (2).jpg",
+        "fingerprint": "sha256:c214fbee6e080d7438b13b0d374adbdcf6a408e309a7d01541ff19df13e7ee9c",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "backend",
+          "frontend"
+        ],
+        "semantic_destination": "/products/baicha-knit-sweater",
+        "business_entity": "baicha-knit-sweater",
+        "placement_reason": "Product studio photography for White Tea Openwork Ribbed Knit Sweater."
+      }
+    },
+    {
+      "source_id": "src-img-20",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\白茶\\细节图 (3).jpg",
+      "type": "image",
+      "fingerprint": "sha256:e0661224a89753eb39e352abc53bcdd1f90c959c3d91010b5e78ec421d49a54f",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 产品图片/白茶/细节图 (3).jpg (2000x2000, 524652 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-20",
+        "locator": "产品图片/白茶/细节图 (3).jpg",
+        "fingerprint": "sha256:e0661224a89753eb39e352abc53bcdd1f90c959c3d91010b5e78ec421d49a54f",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "backend",
+          "frontend"
+        ],
+        "semantic_destination": "/products/baicha-knit-sweater",
+        "business_entity": "baicha-knit-sweater",
+        "placement_reason": "Product studio photography for White Tea Openwork Ribbed Knit Sweater."
+      }
+    },
+    {
+      "source_id": "src-img-21",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\白茶\\细节图 (4).jpg",
+      "type": "image",
+      "fingerprint": "sha256:893f4eccb857767e2c6f6d99ec6ac833cfb044bffeed1b8d70e60c5e693b5479",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 产品图片/白茶/细节图 (4).jpg (2000x2000, 683362 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-21",
+        "locator": "产品图片/白茶/细节图 (4).jpg",
+        "fingerprint": "sha256:893f4eccb857767e2c6f6d99ec6ac833cfb044bffeed1b8d70e60c5e693b5479",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "backend",
+          "frontend"
+        ],
+        "semantic_destination": "/products/baicha-knit-sweater",
+        "business_entity": "baicha-knit-sweater",
+        "placement_reason": "Product studio photography for White Tea Openwork Ribbed Knit Sweater."
+      }
+    },
+    {
+      "source_id": "src-img-22",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\白茶\\细节图 (5).jpg",
+      "type": "image",
+      "fingerprint": "sha256:5c167eb770a6a6950a932915fb4f2a8e78441b38d04485a28b67b8b516de24b1",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 产品图片/白茶/细节图 (5).jpg (2000x2000, 589469 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-22",
+        "locator": "产品图片/白茶/细节图 (5).jpg",
+        "fingerprint": "sha256:5c167eb770a6a6950a932915fb4f2a8e78441b38d04485a28b67b8b516de24b1",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "backend",
+          "frontend"
+        ],
+        "semantic_destination": "/products/baicha-knit-sweater",
+        "business_entity": "baicha-knit-sweater",
+        "placement_reason": "Product studio photography for White Tea Openwork Ribbed Knit Sweater."
+      }
+    },
+    {
+      "source_id": "src-img-23",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\白茶\\细节图 (6).jpg",
+      "type": "image",
+      "fingerprint": "sha256:e24f3e56ddbcc5bd80d3b9fe433f43b30310f9bf76fa9ed6e334854f15dd6ce5",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 产品图片/白茶/细节图 (6).jpg (2000x2000, 602828 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-23",
+        "locator": "产品图片/白茶/细节图 (6).jpg",
+        "fingerprint": "sha256:e24f3e56ddbcc5bd80d3b9fe433f43b30310f9bf76fa9ed6e334854f15dd6ce5",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "backend",
+          "frontend"
+        ],
+        "semantic_destination": "/products/baicha-knit-sweater",
+        "business_entity": "baicha-knit-sweater",
+        "placement_reason": "Product studio photography for White Tea Openwork Ribbed Knit Sweater."
+      }
+    },
+    {
+      "source_id": "src-img-24",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\白茶\\背面图.jpg",
+      "type": "image",
+      "fingerprint": "sha256:6b12ad917717869d1f5bcfeca38ab96f9339681426eb7acb213b13553d3ba01d",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 产品图片/白茶/背面图.jpg (2000x2000, 604544 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-24",
+        "locator": "产品图片/白茶/背面图.jpg",
+        "fingerprint": "sha256:6b12ad917717869d1f5bcfeca38ab96f9339681426eb7acb213b13553d3ba01d",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "backend",
+          "frontend"
+        ],
+        "semantic_destination": "/products/baicha-knit-sweater",
+        "business_entity": "baicha-knit-sweater",
+        "placement_reason": "Product studio photography for White Tea Openwork Ribbed Knit Sweater."
+      }
+    },
+    {
+      "source_id": "src-img-25",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\蝴蝶打底衫\\0.jpg",
+      "type": "image",
+      "fingerprint": "sha256:7f71fc02d0c27ce7de9090b48bcfbf20566afd478a9ab104b8ab5334ee623084",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 产品图片/蝴蝶打底衫/0.jpg (2000x2000, 738736 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-25",
+        "locator": "产品图片/蝴蝶打底衫/0.jpg",
+        "fingerprint": "sha256:7f71fc02d0c27ce7de9090b48bcfbf20566afd478a9ab104b8ab5334ee623084",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "backend",
+          "frontend"
+        ],
+        "semantic_destination": "/products/butterfly-knit-base-layer",
+        "business_entity": "butterfly-knit-base-layer",
+        "placement_reason": "Product studio photography for 3D Butterfly Hollow-Out Knit Base Layer."
+      }
+    },
+    {
+      "source_id": "src-img-26",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\蝴蝶打底衫\\1 (1).jpg",
+      "type": "image",
+      "fingerprint": "sha256:41b463ec8a5e94ee4e9b426ac792637493d903517869f262a1d63620a4618895",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 产品图片/蝴蝶打底衫/1 (1).jpg (2000x2000, 699050 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-26",
+        "locator": "产品图片/蝴蝶打底衫/1 (1).jpg",
+        "fingerprint": "sha256:41b463ec8a5e94ee4e9b426ac792637493d903517869f262a1d63620a4618895",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "backend",
+          "frontend"
+        ],
+        "semantic_destination": "/products/butterfly-knit-base-layer",
+        "business_entity": "butterfly-knit-base-layer",
+        "placement_reason": "Product studio photography for 3D Butterfly Hollow-Out Knit Base Layer."
+      }
+    },
+    {
+      "source_id": "src-img-27",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\蝴蝶打底衫\\1 (2).jpg",
+      "type": "image",
+      "fingerprint": "sha256:e19eb1d92e5410dd7fe63d44dafcab56827f5827e5abe88ea55ab62a3302925f",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 产品图片/蝴蝶打底衫/1 (2).jpg (2000x2000, 651816 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-27",
+        "locator": "产品图片/蝴蝶打底衫/1 (2).jpg",
+        "fingerprint": "sha256:e19eb1d92e5410dd7fe63d44dafcab56827f5827e5abe88ea55ab62a3302925f",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "backend",
+          "frontend"
+        ],
+        "semantic_destination": "/products/butterfly-knit-base-layer",
+        "business_entity": "butterfly-knit-base-layer",
+        "placement_reason": "Product studio photography for 3D Butterfly Hollow-Out Knit Base Layer."
+      }
+    },
+    {
+      "source_id": "src-img-28",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\蝴蝶打底衫\\1 (3).jpg",
+      "type": "image",
+      "fingerprint": "sha256:7fd6f83204265d4a459387381009906ad78679a9cd0ee35086292987af20098f",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 产品图片/蝴蝶打底衫/1 (3).jpg (2000x2000, 541823 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-28",
+        "locator": "产品图片/蝴蝶打底衫/1 (3).jpg",
+        "fingerprint": "sha256:7fd6f83204265d4a459387381009906ad78679a9cd0ee35086292987af20098f",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "backend",
+          "frontend"
+        ],
+        "semantic_destination": "/products/butterfly-knit-base-layer",
+        "business_entity": "butterfly-knit-base-layer",
+        "placement_reason": "Product studio photography for 3D Butterfly Hollow-Out Knit Base Layer."
+      }
+    },
+    {
+      "source_id": "src-img-29",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\蝴蝶打底衫\\1 (4).jpg",
+      "type": "image",
+      "fingerprint": "sha256:7ecd4a24551792f96a64aa029da92af376811aca5e8899933248e9d947363bf4",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 产品图片/蝴蝶打底衫/1 (4).jpg (2000x2000, 560905 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-29",
+        "locator": "产品图片/蝴蝶打底衫/1 (4).jpg",
+        "fingerprint": "sha256:7ecd4a24551792f96a64aa029da92af376811aca5e8899933248e9d947363bf4",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "backend",
+          "frontend"
+        ],
+        "semantic_destination": "/products/butterfly-knit-base-layer",
+        "business_entity": "butterfly-knit-base-layer",
+        "placement_reason": "Product studio photography for 3D Butterfly Hollow-Out Knit Base Layer."
+      }
+    },
+    {
+      "source_id": "src-img-30",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\蝴蝶打底衫\\1 (5).jpg",
+      "type": "image",
+      "fingerprint": "sha256:ee0a11165b845a0a3d5b83cd20484c784a739ecb573e01bbef878056f4715f4f",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 产品图片/蝴蝶打底衫/1 (5).jpg (2000x2000, 616082 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-30",
+        "locator": "产品图片/蝴蝶打底衫/1 (5).jpg",
+        "fingerprint": "sha256:ee0a11165b845a0a3d5b83cd20484c784a739ecb573e01bbef878056f4715f4f",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "backend",
+          "frontend"
+        ],
+        "semantic_destination": "/products/butterfly-knit-base-layer",
+        "business_entity": "butterfly-knit-base-layer",
+        "placement_reason": "Product studio photography for 3D Butterfly Hollow-Out Knit Base Layer."
+      }
+    },
+    {
+      "source_id": "src-img-31",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\蝴蝶打底衫\\1 (6).jpg",
+      "type": "image",
+      "fingerprint": "sha256:3035f661e3b155cf4c0195b580c506aae327c10d291ea5fdb147623cf21831e4",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 产品图片/蝴蝶打底衫/1 (6).jpg (2000x2000, 653271 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-31",
+        "locator": "产品图片/蝴蝶打底衫/1 (6).jpg",
+        "fingerprint": "sha256:3035f661e3b155cf4c0195b580c506aae327c10d291ea5fdb147623cf21831e4",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "backend",
+          "frontend"
+        ],
+        "semantic_destination": "/products/butterfly-knit-base-layer",
+        "business_entity": "butterfly-knit-base-layer",
+        "placement_reason": "Product studio photography for 3D Butterfly Hollow-Out Knit Base Layer."
+      }
+    },
+    {
+      "source_id": "src-img-32",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\蝴蝶打底衫\\1 (7).jpg",
+      "type": "image",
+      "fingerprint": "sha256:29386d04ac094d6413712f1ec3ca0c36f0e0e887046e818dc1f7894ab5ef460d",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 产品图片/蝴蝶打底衫/1 (7).jpg (2000x2000, 654543 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-32",
+        "locator": "产品图片/蝴蝶打底衫/1 (7).jpg",
+        "fingerprint": "sha256:29386d04ac094d6413712f1ec3ca0c36f0e0e887046e818dc1f7894ab5ef460d",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "backend",
+          "frontend"
+        ],
+        "semantic_destination": "/products/butterfly-knit-base-layer",
+        "business_entity": "butterfly-knit-base-layer",
+        "placement_reason": "Product studio photography for 3D Butterfly Hollow-Out Knit Base Layer."
+      }
+    },
+    {
+      "source_id": "src-img-33",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\蝴蝶打底衫\\1 (8).jpg",
+      "type": "image",
+      "fingerprint": "sha256:7d5ef3686ac800b4f12368456bd3de8a2155d7d2990a3ac7a65077e9e2d18c53",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 产品图片/蝴蝶打底衫/1 (8).jpg (2000x2000, 670966 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-33",
+        "locator": "产品图片/蝴蝶打底衫/1 (8).jpg",
+        "fingerprint": "sha256:7d5ef3686ac800b4f12368456bd3de8a2155d7d2990a3ac7a65077e9e2d18c53",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "backend",
+          "frontend"
+        ],
+        "semantic_destination": "/products/butterfly-knit-base-layer",
+        "business_entity": "butterfly-knit-base-layer",
+        "placement_reason": "Product studio photography for 3D Butterfly Hollow-Out Knit Base Layer."
+      }
+    },
+    {
+      "source_id": "src-img-34",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\蝴蝶打底衫\\1 (9).jpg",
+      "type": "image",
+      "fingerprint": "sha256:865550088e3eba96ecab3f7a017fad4c484cab14f08b63af8ed5abcaa80b7885",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 产品图片/蝴蝶打底衫/1 (9).jpg (2000x2000, 721461 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-34",
+        "locator": "产品图片/蝴蝶打底衫/1 (9).jpg",
+        "fingerprint": "sha256:865550088e3eba96ecab3f7a017fad4c484cab14f08b63af8ed5abcaa80b7885",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "backend",
+          "frontend"
+        ],
+        "semantic_destination": "/products/butterfly-knit-base-layer",
+        "business_entity": "butterfly-knit-base-layer",
+        "placement_reason": "Product studio photography for 3D Butterfly Hollow-Out Knit Base Layer."
+      }
+    },
+    {
+      "source_id": "src-img-35",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\工厂实拍图片\\1 (1).jpg",
+      "type": "image",
+      "fingerprint": "sha256:34b854c60e328700f55650762717bc930c8836864a3c9de79c41c0605e8af092",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 工厂实拍图片/1 (1).jpg (2848x1600, 3213117 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-35",
+        "locator": "工厂实拍图片/1 (1).jpg",
+        "fingerprint": "sha256:34b854c60e328700f55650762717bc930c8836864a3c9de79c41c0605e8af092",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "frontend"
+        ],
+        "semantic_destination": "/manufacturing",
+        "business_entity": "suzhou-xigong-manufacturing",
+        "placement_reason": "Real knitwear factory, computerized flat knitting equipment, finishing, QC, or warehouse photograph (1 (1).jpg)."
+      }
+    },
+    {
+      "source_id": "src-img-36",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\工厂实拍图片\\1 (2).jpg",
+      "type": "image",
+      "fingerprint": "sha256:9649e72bfa83c3825c33e3c89c230caa5ea315fdd7ee80f48885665017f37473",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 工厂实拍图片/1 (2).jpg (2848x1600, 4314939 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-36",
+        "locator": "工厂实拍图片/1 (2).jpg",
+        "fingerprint": "sha256:9649e72bfa83c3825c33e3c89c230caa5ea315fdd7ee80f48885665017f37473",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "frontend"
+        ],
+        "semantic_destination": "/manufacturing",
+        "business_entity": "suzhou-xigong-manufacturing",
+        "placement_reason": "Real knitwear factory, computerized flat knitting equipment, finishing, QC, or warehouse photograph (1 (2).jpg)."
+      }
+    },
+    {
+      "source_id": "src-img-37",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\工厂实拍图片\\1 (3).jpg",
+      "type": "image",
+      "fingerprint": "sha256:bf8b522ba41915d3d039fd8ab5f45d5410d934e52f9ce9c4c6a53f2e468a4421",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 工厂实拍图片/1 (3).jpg (2848x1600, 3432393 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-37",
+        "locator": "工厂实拍图片/1 (3).jpg",
+        "fingerprint": "sha256:bf8b522ba41915d3d039fd8ab5f45d5410d934e52f9ce9c4c6a53f2e468a4421",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "frontend"
+        ],
+        "semantic_destination": "/manufacturing",
+        "business_entity": "suzhou-xigong-manufacturing",
+        "placement_reason": "Real knitwear factory, computerized flat knitting equipment, finishing, QC, or warehouse photograph (1 (3).jpg)."
+      }
+    },
+    {
+      "source_id": "src-img-38",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\工厂实拍图片\\1 (4).jpg",
+      "type": "image",
+      "fingerprint": "sha256:c6046ad7926931a24ab14c2911f63bdf0d91cbb5f04602468011729aa4044182",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 工厂实拍图片/1 (4).jpg (2848x1600, 3608640 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-38",
+        "locator": "工厂实拍图片/1 (4).jpg",
+        "fingerprint": "sha256:c6046ad7926931a24ab14c2911f63bdf0d91cbb5f04602468011729aa4044182",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "frontend"
+        ],
+        "semantic_destination": "/manufacturing",
+        "business_entity": "suzhou-xigong-manufacturing",
+        "placement_reason": "Real knitwear factory, computerized flat knitting equipment, finishing, QC, or warehouse photograph (1 (4).jpg)."
+      }
+    },
+    {
+      "source_id": "src-img-39",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\工厂实拍图片\\1 (5).jpg",
+      "type": "image",
+      "fingerprint": "sha256:d3a6ee18a7c2c73f5176c57758d36c0f82ba131adf728dc96fe906b1624a23ff",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 工厂实拍图片/1 (5).jpg (2848x1600, 3882381 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-39",
+        "locator": "工厂实拍图片/1 (5).jpg",
+        "fingerprint": "sha256:d3a6ee18a7c2c73f5176c57758d36c0f82ba131adf728dc96fe906b1624a23ff",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "frontend"
+        ],
+        "semantic_destination": "/manufacturing",
+        "business_entity": "suzhou-xigong-manufacturing",
+        "placement_reason": "Real knitwear factory, computerized flat knitting equipment, finishing, QC, or warehouse photograph (1 (5).jpg)."
+      }
+    },
+    {
+      "source_id": "src-img-40",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\工厂实拍图片\\1 (6).jpg",
+      "type": "image",
+      "fingerprint": "sha256:823d77c2defd651e3baff68f03ab6a8c7c52071d82d204948d45ab6fad58efe3",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 工厂实拍图片/1 (6).jpg (2848x1600, 4315566 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-40",
+        "locator": "工厂实拍图片/1 (6).jpg",
+        "fingerprint": "sha256:823d77c2defd651e3baff68f03ab6a8c7c52071d82d204948d45ab6fad58efe3",
+        "decision": "excluded_by_rule",
+        "reason_code": "not_public_buyer_value",
+        "reason": "Visually identical duplicate of 工厂实拍图片/1 (2).jpg (finished knitwear warehouse aisle), differing only by 627 bytes of JPEG encoding metadata.",
+        "evidence": "Direct visual comparison of 工厂实拍图片/1 (2).jpg and 1 (6).jpg; 1 (2).jpg is published in Manufacturing & About."
+      }
+    },
+    {
+      "source_id": "src-img-41",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\工厂实拍图片\\1 (7).jpg",
+      "type": "image",
+      "fingerprint": "sha256:62f1007b5378c00d4c5eac3058bcf0cf40ee4b8566de7a8e59289abe46003377",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 工厂实拍图片/1 (7).jpg (2848x1600, 3997502 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-41",
+        "locator": "工厂实拍图片/1 (7).jpg",
+        "fingerprint": "sha256:62f1007b5378c00d4c5eac3058bcf0cf40ee4b8566de7a8e59289abe46003377",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "frontend"
+        ],
+        "semantic_destination": "/manufacturing",
+        "business_entity": "suzhou-xigong-manufacturing",
+        "placement_reason": "Real knitwear factory, computerized flat knitting equipment, finishing, QC, or warehouse photograph (1 (7).jpg)."
+      }
+    },
+    {
+      "source_id": "src-img-42",
+      "path": "E:\\E暂存\\苏州西宫针织服饰有限公司\\工厂实拍图片\\1 (8).jpg",
+      "type": "image",
+      "fingerprint": "sha256:04a5eab3b18aa89ffc32c5db2b85c60757c94fd0263609db99c4483b84bf1dc8",
+      "decision": "extract",
+      "extraction_evidence": "Visually inspected 工厂实拍图片/1 (8).jpg (2848x1600, 3912475 bytes).",
+      "no_fact_reason": "Visual media asset tracked via media_asset record rather than text extraction units.",
+      "units": [],
+      "media_asset": {
+        "media_id": "m-img-42",
+        "locator": "工厂实拍图片/1 (8).jpg",
+        "fingerprint": "sha256:04a5eab3b18aa89ffc32c5db2b85c60757c94fd0263609db99c4483b84bf1dc8",
+        "decision": "use",
+        "expected_destinations": [
+          "r2",
+          "frontend"
+        ],
+        "semantic_destination": "/manufacturing",
+        "business_entity": "suzhou-xigong-manufacturing",
+        "placement_reason": "Real knitwear factory, computerized flat knitting equipment, finishing, QC, or warehouse photograph (1 (8).jpg)."
+      }
+    }
+  ],
+  "facts": [
+    {
+      "fact_id": "f-formal-domain",
+      "entity_type": "site_settings",
+      "entity_key": "xgzzfs",
+      "field": "domain",
+      "source_refs": [
+        {
+          "source_id": "src-txt-domain-email",
+          "unit_id": "u-domain"
+        }
+      ],
+      "source_value_hash": "sha256:6f635cfdda449cfe32df4a8e3a2ff186ce2ba4b116dff4ffcc980b25d111c292",
+      "decision": "use",
+      "expected_destinations": [
+        "backend",
+        "frontend_seo"
+      ]
+    },
+    {
+      "fact_id": "f-formal-email",
+      "entity_type": "site_settings",
+      "entity_key": "xgzzfs",
+      "field": "email",
+      "source_refs": [
+        {
+          "source_id": "src-txt-domain-email",
+          "unit_id": "u-email"
+        }
+      ],
+      "source_value_hash": "sha256:8eea7ec6376b0a8e2db0dceb40aac50df21b0b9d7ec11d4a4276ef9929ea7f13",
+      "decision": "use",
+      "expected_destinations": [
+        "backend",
+        "frontend_contact",
+        "frontend_footer"
+      ]
+    },
+    {
+      "fact_id": "f-company-zh",
+      "entity_type": "company",
+      "entity_key": "suzhou-xigong",
+      "field": "display_name",
+      "source_refs": [
+        {
+          "source_id": "src-xlsx-main",
+          "unit_id": "u-company-zh"
+        }
+      ],
+      "source_value_hash": "sha256:42471107e1105a4f4fa952e7cd12e5ed775a4ee917934b9c57148413de6efbf7",
+      "decision": "use",
+      "expected_destinations": [
+        "backend"
+      ]
+    },
+    {
+      "fact_id": "f-company-en",
+      "entity_type": "company",
+      "entity_key": "suzhou-xigong",
+      "field": "legal_name_en",
+      "source_refs": [
+        {
+          "source_id": "src-xlsx-main",
+          "unit_id": "u-company-en"
+        }
+      ],
+      "source_value_hash": "sha256:cb0d3fd480150eb0593606a865e8ffe8b67892a1e28b199f9fa0a0b30cb54e39",
+      "decision": "use",
+      "expected_destinations": [
+        "backend",
+        "frontend_footer",
+        "frontend_about"
+      ]
+    },
+    {
+      "fact_id": "f-address",
+      "entity_type": "company",
+      "entity_key": "suzhou-xigong",
+      "field": "address",
+      "source_refs": [
+        {
+          "source_id": "src-xlsx-main",
+          "unit_id": "u-address"
+        }
+      ],
+      "source_value_hash": "sha256:504a579eb6c6375af078c33fe940d33e83bf846ca27cc5b213b4a96f571cb1d4",
+      "decision": "use",
+      "expected_destinations": [
+        "backend",
+        "frontend_contact",
+        "frontend_footer"
+      ]
+    },
+    {
+      "fact_id": "f-phone",
+      "entity_type": "company",
+      "entity_key": "suzhou-xigong",
+      "field": "phone",
+      "source_refs": [
+        {
+          "source_id": "src-xlsx-main",
+          "unit_id": "u-phone"
+        }
+      ],
+      "source_value_hash": "sha256:cae0fc5e6039d7f15ef4f008a626d9a7930c47676a0320c5e984c933f1b5f007",
+      "decision": "use",
+      "expected_destinations": [
+        "backend",
+        "frontend_contact",
+        "frontend_footer"
+      ]
+    },
+    {
+      "fact_id": "f-categories",
+      "entity_type": "company",
+      "entity_key": "suzhou-xigong",
+      "field": "product_categories",
+      "source_refs": [
+        {
+          "source_id": "src-xlsx-main",
+          "unit_id": "u-categories"
+        }
+      ],
+      "source_value_hash": "sha256:7eb2a68ecf4eb31ed73c2d374fb91b21724c1c3b227a8a46fdc4d9de250e20a1",
+      "decision": "use",
+      "expected_destinations": [
+        "backend",
+        "frontend_home",
+        "frontend_products"
+      ]
+    },
+    {
+      "fact_id": "f-founded",
+      "entity_type": "company",
+      "entity_key": "suzhou-xigong",
+      "field": "founded_year",
+      "source_refs": [
+        {
+          "source_id": "src-xlsx-main",
+          "unit_id": "u-profile-founded"
+        }
+      ],
+      "source_value_hash": "sha256:96da37e95d5cc34fe3bef6c89428df859b8a217630d0c664da1daf1539caacf5",
+      "decision": "use",
+      "expected_destinations": [
+        "backend",
+        "frontend_home",
+        "frontend_about"
+      ]
+    },
+    {
+      "fact_id": "f-factory-area",
+      "entity_type": "company",
+      "entity_key": "suzhou-xigong",
+      "field": "factory_area",
+      "source_refs": [
+        {
+          "source_id": "src-xlsx-main",
+          "unit_id": "u-profile-founded"
+        }
+      ],
+      "source_value_hash": "sha256:850725dbb9c020060d4095322506ce108b83f15ea0275e68409622a042de0475",
+      "decision": "use",
+      "expected_destinations": [
+        "backend",
+        "frontend_home",
+        "frontend_manufacturing"
+      ]
+    },
+    {
+      "fact_id": "f-equipment",
+      "entity_type": "company",
+      "entity_key": "suzhou-xigong",
+      "field": "core_equipment",
+      "source_refs": [
+        {
+          "source_id": "src-xlsx-main",
+          "unit_id": "u-profile-founded"
+        }
+      ],
+      "source_value_hash": "sha256:d611cb7b99a05f67a58232fab0dd79b052a4c8f8e7f3bbf62895d85bc1038d17",
+      "decision": "use",
+      "expected_destinations": [
+        "backend",
+        "frontend_home",
+        "frontend_manufacturing"
+      ]
+    },
+    {
+      "fact_id": "f-monthly-capacity",
+      "entity_type": "company",
+      "entity_key": "suzhou-xigong",
+      "field": "monthly_capacity",
+      "source_refs": [
+        {
+          "source_id": "src-xlsx-main",
+          "unit_id": "u-profile-founded"
+        }
+      ],
+      "source_value_hash": "sha256:3f1c6e13bbca4168e7e5a79213fff176cd43be266fa2695c6790dcfb42572bff",
+      "decision": "use",
+      "expected_destinations": [
+        "backend",
+        "frontend_home",
+        "frontend_manufacturing"
+      ]
+    },
+    {
+      "fact_id": "f-lead-time",
+      "entity_type": "company",
+      "entity_key": "suzhou-xigong",
+      "field": "lead_time",
+      "source_refs": [
+        {
+          "source_id": "src-xlsx-main",
+          "unit_id": "u-profile-founded"
+        }
+      ],
+      "source_value_hash": "sha256:0c081c51bd0aff340a5bb595b7025a35b387a39e83fb6c482e2a174325541516",
+      "decision": "use",
+      "expected_destinations": [
+        "backend",
+        "frontend_home",
+        "frontend_manufacturing"
+      ]
+    },
+    {
+      "fact_id": "f-oem-odm",
+      "entity_type": "company",
+      "entity_key": "suzhou-xigong",
+      "field": "oem_odm",
+      "source_refs": [
+        {
+          "source_id": "src-xlsx-main",
+          "unit_id": "u-profile-founded"
+        }
+      ],
+      "source_value_hash": "sha256:86959373150d89f2015d9f0650875c594f0d3fbe859feb2ae23852313df6f3a3",
+      "decision": "use",
+      "expected_destinations": [
+        "backend",
+        "frontend_home",
+        "frontend_about"
+      ]
+    },
+    {
+      "fact_id": "f-prod-yunjian-desc",
+      "entity_type": "product",
+      "entity_key": "yunjian-huaxu-cardigan",
+      "field": "description",
+      "source_refs": [
+        {
+          "source_id": "src-xlsx-main",
+          "unit_id": "u-prod-yunjian"
+        }
+      ],
+      "source_value_hash": "sha256:8f618af3eae98fe9fbb2a8a422eab6ef5c7a4025aa9784172d55197c904731c0",
+      "decision": "use",
+      "expected_destinations": [
+        "backend",
+        "frontend_product_detail"
+      ]
+    },
+    {
+      "fact_id": "f-prod-yunjian-spec",
+      "entity_type": "product",
+      "entity_key": "yunjian-huaxu-cardigan",
+      "field": "specifications",
+      "source_refs": [
+        {
+          "source_id": "src-xlsx-main",
+          "unit_id": "u-prod-yunjian"
+        }
+      ],
+      "source_value_hash": "sha256:fc84466d76cc1a559fa277f82f620c611c6887ddf705ea6b8fc01ecbbb727a31",
+      "decision": "use",
+      "expected_destinations": [
+        "backend",
+        "frontend_product_detail"
+      ]
+    },
+    {
+      "fact_id": "f-prod-butterfly-desc",
+      "entity_type": "product",
+      "entity_key": "butterfly-knit-base-layer",
+      "field": "description",
+      "source_refs": [
+        {
+          "source_id": "src-xlsx-main",
+          "unit_id": "u-prod-butterfly"
+        }
+      ],
+      "source_value_hash": "sha256:8d5423d1b6722161c22b3aeaae57ddc707bff2ad1bb02128afba9f4d724bacab",
+      "decision": "use",
+      "expected_destinations": [
+        "backend",
+        "frontend_product_detail"
+      ]
+    },
+    {
+      "fact_id": "f-prod-butterfly-spec",
+      "entity_type": "product",
+      "entity_key": "butterfly-knit-base-layer",
+      "field": "specifications",
+      "source_refs": [
+        {
+          "source_id": "src-xlsx-main",
+          "unit_id": "u-prod-butterfly"
+        }
+      ],
+      "source_value_hash": "sha256:fc7c73cac2ffefa72f815554f70ebee9a13a2076531a4c459eeba7f45cca62da",
+      "decision": "use",
+      "expected_destinations": [
+        "backend",
+        "frontend_product_detail"
+      ]
+    },
+    {
+      "fact_id": "f-faq-moq",
+      "entity_type": "faq",
+      "entity_key": "moq-pricing",
+      "field": "moq",
+      "source_refs": [
+        {
+          "source_id": "src-xlsx-main",
+          "unit_id": "u-faq-all"
+        }
+      ],
+      "source_value_hash": "sha256:93a1e45fe1287642feafda8ebfe4c859415d6c260d55d9b34552e1853d91652d",
+      "decision": "use",
+      "expected_destinations": [
+        "backend",
+        "frontend_home",
+        "frontend_faq"
+      ]
+    },
+    {
+      "fact_id": "f-faq-samples",
+      "entity_type": "faq",
+      "entity_key": "sampling",
+      "field": "sample_policy",
+      "source_refs": [
+        {
+          "source_id": "src-xlsx-main",
+          "unit_id": "u-faq-all"
+        }
+      ],
+      "source_value_hash": "sha256:029c49010ed5f7d10237f072b81fe6f6c70a0614c6cdf471a363008f3adcdb08",
+      "decision": "use",
+      "expected_destinations": [
+        "backend",
+        "frontend_home",
+        "frontend_faq"
+      ]
+    },
+    {
+      "fact_id": "f-faq-production",
+      "entity_type": "faq",
+      "entity_key": "production",
+      "field": "production_schedule",
+      "source_refs": [
+        {
+          "source_id": "src-xlsx-main",
+          "unit_id": "u-faq-all"
+        }
+      ],
+      "source_value_hash": "sha256:5d9220917f970ed78a47243424a68cf58b96f6af340c10f307af5779af5c0f27",
+      "decision": "use",
+      "expected_destinations": [
+        "backend",
+        "frontend_home",
+        "frontend_faq"
+      ]
+    },
+    {
+      "fact_id": "f-faq-qc",
+      "entity_type": "faq",
+      "entity_key": "quality",
+      "field": "qc_process",
+      "source_refs": [
+        {
+          "source_id": "src-xlsx-main",
+          "unit_id": "u-faq-all"
+        }
+      ],
+      "source_value_hash": "sha256:e22a8271551e8a2030c50b2d00a32e6b73e5da23aa9bfa5977016803b88724cf",
+      "decision": "use",
+      "expected_destinations": [
+        "backend",
+        "frontend_home",
+        "frontend_manufacturing",
+        "frontend_faq"
+      ]
+    }
+  ]
+}

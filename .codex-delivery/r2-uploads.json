@@ -1,0 +1,447 @@
+{
+  "bucket": "aiosshemei",
+  "publicBase": "https://pub-c7a22068052144a5805830c30d280128.r2.dev",
+  "count": 44,
+  "items": [
+    {
+      "sourceRel": "banner背景图/1.jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\banner背景图\\1.jpg",
+      "sha256": "sha256:cf91ce7c4bd235a4effb8b4f50f4ceeb9661b9fcef702ffe0e1db3cd9a9f2e13",
+      "key": "site-assets/xgzzfs/banners/banner-1.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/banners/banner-1.jpg",
+      "bytes": 2408787,
+      "width": 3840,
+      "height": 1600
+    },
+    {
+      "sourceRel": "banner背景图/2.jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\banner背景图\\2.jpg",
+      "sha256": "sha256:532017a56c9cd0f68f251d93d9c59039f2e9607021c047164f81f28690cf1efc",
+      "key": "site-assets/xgzzfs/banners/banner-2.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/banners/banner-2.jpg",
+      "bytes": 1736810,
+      "width": 3840,
+      "height": 1600
+    },
+    {
+      "sourceRel": "banner背景图/3.jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\banner背景图\\3.jpg",
+      "sha256": "sha256:4cfd057cf444825d0a8ab5f760bff676ac0fe0811ef7c3d0a54daa8419f75098",
+      "key": "site-assets/xgzzfs/banners/banner-3.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/banners/banner-3.jpg",
+      "bytes": 2173907,
+      "width": 3840,
+      "height": 1600
+    },
+    {
+      "sourceRel": "产品图片/云间花叙/1 (1).jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\云间花叙\\1 (1).jpg",
+      "sha256": "sha256:4614dcabd289719e56dd42715984047ad2c8dfc1cf990a283125965d942eddc4",
+      "key": "site-assets/xgzzfs/products/yunjian-huaxu/yh-01.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/yunjian-huaxu/yh-01.jpg",
+      "bytes": 576808,
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "sourceRel": "产品图片/云间花叙/1 (10).jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\云间花叙\\1 (10).jpg",
+      "sha256": "sha256:f3e6a0337c9a85c6e0d9cac26f762d8c87342d490d4d08445f3acbbd3830e024",
+      "key": "site-assets/xgzzfs/products/yunjian-huaxu/yh-10.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/yunjian-huaxu/yh-10.jpg",
+      "bytes": 594328,
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "sourceRel": "产品图片/云间花叙/1 (11).jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\云间花叙\\1 (11).jpg",
+      "sha256": "sha256:824a064ae213d23d29eff5ce0dec8893f8bc416e22b2c2a3f260d0334af16fa8",
+      "key": "site-assets/xgzzfs/products/yunjian-huaxu/yh-11.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/yunjian-huaxu/yh-11.jpg",
+      "bytes": 477242,
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "sourceRel": "产品图片/云间花叙/1 (12).jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\云间花叙\\1 (12).jpg",
+      "sha256": "sha256:bd9ecc3bd29029db258b7b1a891d9eab15554a314237ebf8e8f8132856c13cce",
+      "key": "site-assets/xgzzfs/products/yunjian-huaxu/yh-12.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/yunjian-huaxu/yh-12.jpg",
+      "bytes": 593578,
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "sourceRel": "产品图片/云间花叙/1 (2).jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\云间花叙\\1 (2).jpg",
+      "sha256": "sha256:0e68265859cd84e28a1d4940c93e3fc3988301b5968572d43d26bfd68aea5b88",
+      "key": "site-assets/xgzzfs/products/yunjian-huaxu/yh-02.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/yunjian-huaxu/yh-02.jpg",
+      "bytes": 559139,
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "sourceRel": "产品图片/云间花叙/1 (3).jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\云间花叙\\1 (3).jpg",
+      "sha256": "sha256:14fc66020ac48cc4690bcd3d4b3bec4a05eeab6238e3e8b4522ec65ef67df588",
+      "key": "site-assets/xgzzfs/products/yunjian-huaxu/yh-03.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/yunjian-huaxu/yh-03.jpg",
+      "bytes": 738267,
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "sourceRel": "产品图片/云间花叙/1 (4).jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\云间花叙\\1 (4).jpg",
+      "sha256": "sha256:94991e084e65a4a4c41ce91a2ed51f0d63f76c36e3e7d348f626cc4e4d651252",
+      "key": "site-assets/xgzzfs/products/yunjian-huaxu/yh-04.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/yunjian-huaxu/yh-04.jpg",
+      "bytes": 799620,
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "sourceRel": "产品图片/云间花叙/1 (5).jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\云间花叙\\1 (5).jpg",
+      "sha256": "sha256:5f248ffb94f76728e9e15f32068f4733cf909edabdfe78463f5adccdcab38fc2",
+      "key": "site-assets/xgzzfs/products/yunjian-huaxu/yh-05.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/yunjian-huaxu/yh-05.jpg",
+      "bytes": 645955,
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "sourceRel": "产品图片/云间花叙/1 (6).jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\云间花叙\\1 (6).jpg",
+      "sha256": "sha256:18ecc6726ed531060dfa459f16cb0a4dd2084cf3d57ec4d10aaa1ce60108d3a3",
+      "key": "site-assets/xgzzfs/products/yunjian-huaxu/yh-06.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/yunjian-huaxu/yh-06.jpg",
+      "bytes": 975927,
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "sourceRel": "产品图片/云间花叙/1 (7).jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\云间花叙\\1 (7).jpg",
+      "sha256": "sha256:56e835a14d06bc8290a4a845a68333ea46ec97606768fa19baa6f161f3d40245",
+      "key": "site-assets/xgzzfs/products/yunjian-huaxu/yh-07.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/yunjian-huaxu/yh-07.jpg",
+      "bytes": 562480,
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "sourceRel": "产品图片/云间花叙/1 (8).jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\云间花叙\\1 (8).jpg",
+      "sha256": "sha256:4cfb7578f8016ea21ff15837f2d2c2d3e72f0ec19271bc5ea3f16418e43ecd36",
+      "key": "site-assets/xgzzfs/products/yunjian-huaxu/yh-08.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/yunjian-huaxu/yh-08.jpg",
+      "bytes": 402857,
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "sourceRel": "产品图片/云间花叙/1 (9).jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\云间花叙\\1 (9).jpg",
+      "sha256": "sha256:ef8f0b2c3593c27ef943ebc303819b53c5023af9d85f014bd96667332ddf07fa",
+      "key": "site-assets/xgzzfs/products/yunjian-huaxu/yh-09.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/yunjian-huaxu/yh-09.jpg",
+      "bytes": 475441,
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "sourceRel": "产品图片/白茶/0-正面图 (2).jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\白茶\\0-正面图 (2).jpg",
+      "sha256": "sha256:6ffc832aa11d63241c76d7bd4009aeb0e08c3bb9b466924b455684e25acbdcd6",
+      "key": "site-assets/xgzzfs/products/baicha/bc-01-front-a.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/baicha/bc-01-front-a.jpg",
+      "bytes": 605088,
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "sourceRel": "产品图片/白茶/0-正面图 (3).jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\白茶\\0-正面图 (3).jpg",
+      "sha256": "sha256:8d515bd565f9183615e603d61c282db6e675d26a15cbf1b365d5c333b0dfa9de",
+      "key": "site-assets/xgzzfs/products/baicha/bc-02-front-b.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/baicha/bc-02-front-b.jpg",
+      "bytes": 556510,
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "sourceRel": "产品图片/白茶/细节图 (1).jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\白茶\\细节图 (1).jpg",
+      "sha256": "sha256:1593e3cb7bf9b3dba6b24ace51a95f904c2bccc331b91f9eb8b8dce5fe7048b4",
+      "key": "site-assets/xgzzfs/products/baicha/bc-detail-01.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/baicha/bc-detail-01.jpg",
+      "bytes": 639783,
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "sourceRel": "产品图片/白茶/细节图 (2).jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\白茶\\细节图 (2).jpg",
+      "sha256": "sha256:c214fbee6e080d7438b13b0d374adbdcf6a408e309a7d01541ff19df13e7ee9c",
+      "key": "site-assets/xgzzfs/products/baicha/bc-detail-02.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/baicha/bc-detail-02.jpg",
+      "bytes": 649596,
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "sourceRel": "产品图片/白茶/细节图 (3).jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\白茶\\细节图 (3).jpg",
+      "sha256": "sha256:e0661224a89753eb39e352abc53bcdd1f90c959c3d91010b5e78ec421d49a54f",
+      "key": "site-assets/xgzzfs/products/baicha/bc-detail-03.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/baicha/bc-detail-03.jpg",
+      "bytes": 524652,
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "sourceRel": "产品图片/白茶/细节图 (4).jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\白茶\\细节图 (4).jpg",
+      "sha256": "sha256:893f4eccb857767e2c6f6d99ec6ac833cfb044bffeed1b8d70e60c5e693b5479",
+      "key": "site-assets/xgzzfs/products/baicha/bc-detail-04.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/baicha/bc-detail-04.jpg",
+      "bytes": 683362,
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "sourceRel": "产品图片/白茶/细节图 (5).jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\白茶\\细节图 (5).jpg",
+      "sha256": "sha256:5c167eb770a6a6950a932915fb4f2a8e78441b38d04485a28b67b8b516de24b1",
+      "key": "site-assets/xgzzfs/products/baicha/bc-detail-05.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/baicha/bc-detail-05.jpg",
+      "bytes": 589469,
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "sourceRel": "产品图片/白茶/细节图 (6).jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\白茶\\细节图 (6).jpg",
+      "sha256": "sha256:e24f3e56ddbcc5bd80d3b9fe433f43b30310f9bf76fa9ed6e334854f15dd6ce5",
+      "key": "site-assets/xgzzfs/products/baicha/bc-detail-06.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/baicha/bc-detail-06.jpg",
+      "bytes": 602828,
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "sourceRel": "产品图片/白茶/背面图.jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\白茶\\背面图.jpg",
+      "sha256": "sha256:6b12ad917717869d1f5bcfeca38ab96f9339681426eb7acb213b13553d3ba01d",
+      "key": "site-assets/xgzzfs/products/baicha/bc-03-back.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/baicha/bc-03-back.jpg",
+      "bytes": 604544,
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "sourceRel": "产品图片/蝴蝶打底衫/0.jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\蝴蝶打底衫\\0.jpg",
+      "sha256": "sha256:7f71fc02d0c27ce7de9090b48bcfbf20566afd478a9ab104b8ab5334ee623084",
+      "key": "site-assets/xgzzfs/products/butterfly-base/bf-00-front.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/butterfly-base/bf-00-front.jpg",
+      "bytes": 738736,
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "sourceRel": "产品图片/蝴蝶打底衫/1 (1).jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\蝴蝶打底衫\\1 (1).jpg",
+      "sha256": "sha256:41b463ec8a5e94ee4e9b426ac792637493d903517869f262a1d63620a4618895",
+      "key": "site-assets/xgzzfs/products/butterfly-base/bf-01.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/butterfly-base/bf-01.jpg",
+      "bytes": 699050,
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "sourceRel": "产品图片/蝴蝶打底衫/1 (2).jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\蝴蝶打底衫\\1 (2).jpg",
+      "sha256": "sha256:e19eb1d92e5410dd7fe63d44dafcab56827f5827e5abe88ea55ab62a3302925f",
+      "key": "site-assets/xgzzfs/products/butterfly-base/bf-02.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/butterfly-base/bf-02.jpg",
+      "bytes": 651816,
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "sourceRel": "产品图片/蝴蝶打底衫/1 (3).jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\蝴蝶打底衫\\1 (3).jpg",
+      "sha256": "sha256:7fd6f83204265d4a459387381009906ad78679a9cd0ee35086292987af20098f",
+      "key": "site-assets/xgzzfs/products/butterfly-base/bf-03.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/butterfly-base/bf-03.jpg",
+      "bytes": 541823,
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "sourceRel": "产品图片/蝴蝶打底衫/1 (4).jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\蝴蝶打底衫\\1 (4).jpg",
+      "sha256": "sha256:7ecd4a24551792f96a64aa029da92af376811aca5e8899933248e9d947363bf4",
+      "key": "site-assets/xgzzfs/products/butterfly-base/bf-04.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/butterfly-base/bf-04.jpg",
+      "bytes": 560905,
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "sourceRel": "产品图片/蝴蝶打底衫/1 (5).jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\蝴蝶打底衫\\1 (5).jpg",
+      "sha256": "sha256:ee0a11165b845a0a3d5b83cd20484c784a739ecb573e01bbef878056f4715f4f",
+      "key": "site-assets/xgzzfs/products/butterfly-base/bf-05.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/butterfly-base/bf-05.jpg",
+      "bytes": 616082,
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "sourceRel": "产品图片/蝴蝶打底衫/1 (6).jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\蝴蝶打底衫\\1 (6).jpg",
+      "sha256": "sha256:3035f661e3b155cf4c0195b580c506aae327c10d291ea5fdb147623cf21831e4",
+      "key": "site-assets/xgzzfs/products/butterfly-base/bf-06.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/butterfly-base/bf-06.jpg",
+      "bytes": 653271,
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "sourceRel": "产品图片/蝴蝶打底衫/1 (7).jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\蝴蝶打底衫\\1 (7).jpg",
+      "sha256": "sha256:29386d04ac094d6413712f1ec3ca0c36f0e0e887046e818dc1f7894ab5ef460d",
+      "key": "site-assets/xgzzfs/products/butterfly-base/bf-07.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/butterfly-base/bf-07.jpg",
+      "bytes": 654543,
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "sourceRel": "产品图片/蝴蝶打底衫/1 (8).jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\蝴蝶打底衫\\1 (8).jpg",
+      "sha256": "sha256:7d5ef3686ac800b4f12368456bd3de8a2155d7d2990a3ac7a65077e9e2d18c53",
+      "key": "site-assets/xgzzfs/products/butterfly-base/bf-08.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/butterfly-base/bf-08.jpg",
+      "bytes": 670966,
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "sourceRel": "产品图片/蝴蝶打底衫/1 (9).jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\产品图片\\蝴蝶打底衫\\1 (9).jpg",
+      "sha256": "sha256:865550088e3eba96ecab3f7a017fad4c484cab14f08b63af8ed5abcaa80b7885",
+      "key": "site-assets/xgzzfs/products/butterfly-base/bf-09.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/butterfly-base/bf-09.jpg",
+      "bytes": 721461,
+      "width": 2000,
+      "height": 2000
+    },
+    {
+      "sourceRel": "工厂实拍图片/1 (1).jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\工厂实拍图片\\1 (1).jpg",
+      "sha256": "sha256:34b854c60e328700f55650762717bc930c8836864a3c9de79c41c0605e8af092",
+      "key": "site-assets/xgzzfs/factory/factory-01.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/factory/factory-01.jpg",
+      "bytes": 3213117,
+      "width": 2848,
+      "height": 1600
+    },
+    {
+      "sourceRel": "工厂实拍图片/1 (2).jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\工厂实拍图片\\1 (2).jpg",
+      "sha256": "sha256:9649e72bfa83c3825c33e3c89c230caa5ea315fdd7ee80f48885665017f37473",
+      "key": "site-assets/xgzzfs/factory/factory-02.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/factory/factory-02.jpg",
+      "bytes": 4314939,
+      "width": 2848,
+      "height": 1600
+    },
+    {
+      "sourceRel": "工厂实拍图片/1 (3).jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\工厂实拍图片\\1 (3).jpg",
+      "sha256": "sha256:bf8b522ba41915d3d039fd8ab5f45d5410d934e52f9ce9c4c6a53f2e468a4421",
+      "key": "site-assets/xgzzfs/factory/factory-03.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/factory/factory-03.jpg",
+      "bytes": 3432393,
+      "width": 2848,
+      "height": 1600
+    },
+    {
+      "sourceRel": "工厂实拍图片/1 (4).jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\工厂实拍图片\\1 (4).jpg",
+      "sha256": "sha256:c6046ad7926931a24ab14c2911f63bdf0d91cbb5f04602468011729aa4044182",
+      "key": "site-assets/xgzzfs/factory/factory-04.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/factory/factory-04.jpg",
+      "bytes": 3608640,
+      "width": 2848,
+      "height": 1600
+    },
+    {
+      "sourceRel": "工厂实拍图片/1 (5).jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\工厂实拍图片\\1 (5).jpg",
+      "sha256": "sha256:d3a6ee18a7c2c73f5176c57758d36c0f82ba131adf728dc96fe906b1624a23ff",
+      "key": "site-assets/xgzzfs/factory/factory-05.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/factory/factory-05.jpg",
+      "bytes": 3882381,
+      "width": 2848,
+      "height": 1600
+    },
+    {
+      "sourceRel": "工厂实拍图片/1 (7).jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\工厂实拍图片\\1 (7).jpg",
+      "sha256": "sha256:62f1007b5378c00d4c5eac3058bcf0cf40ee4b8566de7a8e59289abe46003377",
+      "key": "site-assets/xgzzfs/factory/factory-07.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/factory/factory-07.jpg",
+      "bytes": 3997502,
+      "width": 2848,
+      "height": 1600
+    },
+    {
+      "sourceRel": "工厂实拍图片/1 (8).jpg",
+      "sourceFull": "E:\\E暂存\\苏州西宫针织服饰有限公司\\工厂实拍图片\\1 (8).jpg",
+      "sha256": "sha256:04a5eab3b18aa89ffc32c5db2b85c60757c94fd0263609db99c4483b84bf1dc8",
+      "key": "site-assets/xgzzfs/factory/factory-08.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/factory/factory-08.jpg",
+      "bytes": 3912475,
+      "width": 2848,
+      "height": 1600
+    },
+    {
+      "sourceRel": "xl/media/image2.jpeg",
+      "sourceFull": "d:\\Cursor\\Grand\\huanqiu-admin\\.delivery-state\\xgzzfs-intake\\extracted-media\\image2.jpeg",
+      "sha256": "sha256:6a00e36b5b77dc051b6f598330e16712dd9e8898f107b6dab50fa5e66d0358bc",
+      "key": "site-assets/xgzzfs/products/baicha/bc-excel-embed.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/baicha/bc-excel-embed.jpg",
+      "bytes": 2868321,
+      "embedded": true,
+      "product": "baicha-knit-sweater"
+    },
+    {
+      "sourceRel": "xl/media/image3.jpeg",
+      "sourceFull": "d:\\Cursor\\Grand\\huanqiu-admin\\.delivery-state\\xgzzfs-intake\\extracted-media\\image3.jpeg",
+      "sha256": "sha256:abb6bfe41420031cce23b9e6d20a8749912391a891e1826741669d7bb55f0aa9",
+      "key": "site-assets/xgzzfs/products/butterfly-base/bf-excel-embed.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/butterfly-base/bf-excel-embed.jpg",
+      "bytes": 3233522,
+      "embedded": true,
+      "product": "butterfly-knit-base-layer"
+    },
+    {
+      "sourceRel": "xl/media/image4.jpeg",
+      "sourceFull": "d:\\Cursor\\Grand\\huanqiu-admin\\.delivery-state\\xgzzfs-intake\\extracted-media\\image4.jpeg",
+      "sha256": "sha256:ab68972ac73b008d6ec805127a434bb66c46374745bf87956fcb74380067d605",
+      "key": "site-assets/xgzzfs/products/yunjian-huaxu/yh-excel-embed.jpg",
+      "url": "https://pub-c7a22068052144a5805830c30d280128.r2.dev/site-assets/xgzzfs/products/yunjian-huaxu/yh-excel-embed.jpg",
+      "bytes": 2888234,
+      "embedded": true,
+      "product": "yunjian-huaxu-cardigan"
+    }
+  ]
+}

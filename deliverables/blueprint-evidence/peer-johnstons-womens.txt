@@ -1,0 +1,12 @@
+URL: https://johnstonsofelgin.com/collections/womens-knitwear
+FinalURL: https://johnstonsofelgin.com/en-us/collections/womens-knitwear
+Status: 429
+CapturedAt: 2026-11-26T09:23:17.635Z
+Title: 
+Headings:
+
+NavLinks:
+
+
+TextPreview:
+local_rate_limited

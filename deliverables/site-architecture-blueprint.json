@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "templateFamily": "consumer-soft-goods",
+  "navigation": [
+    {
+      "label": "Home",
+      "route": "/",
+      "level": 1,
+      "source": "standard-b2b-nav",
+      "referencePeer": "antiktekstil.com"
+    },
+    {
+      "label": "Products",
+      "route": "/products",
+      "level": 1,
+      "source": "官网资料&产品&FQA收集表.xlsx#企业资料!C8",
+      "referencePeer": "modknitwear.com"
+    },
+    {
+      "label": "Manufacturing",
+      "route": "/manufacturing",
+      "level": 1,
+      "source": "官网资料&产品&FQA收集表.xlsx#企业资料!C16:C18",
+      "referencePeer": "antiktekstil.com"
+    },
+    {
+      "label": "About",
+      "route": "/about",
+      "level": 1,
+      "source": "官网资料&产品&FQA收集表.xlsx#企业资料!C3,C15",
+      "referencePeer": "asbx.pt"
+    },
+    {
+      "label": "News",
+      "route": "/news",
+      "level": 1,
+      "source": "UI-NEWS-LABEL-STANDARD",
+      "referencePeer": "asbx.pt"
+    },
+    {
+      "label": "Contact",
+      "route": "/contact",
+      "level": 1,
+      "source": "域名+邮箱.txt + 企业资料!C4,C6",
+      "referencePeer": "modknitwear.com"
+    }
+  ],
+  "productTaxonomy": [
+    {
+      "customerProduct": "Yunjian Huaxu Hand-Embroidered Wool Cardigan",
+      "category": "Women's Knit Sweaters & Cardigans",
+      "route": "/products/yunjian-huaxu-cardigan",
+      "source": "产品信息!A7:H7 + 产品图片/云间花叙"
+    },
+    {
+      "customerProduct": "White Tea Openwork Ribbed Knit Sweater",
+      "category": "Women's Knit Base Layers",
+      "route": "/products/baicha-knit-sweater",
+      "source": "产品信息!G5 + 产品图片/白茶"
+    },
+    {
+      "customerProduct": "3D Butterfly Hollow-Out Knit Base Layer",
+      "category": "Women's Knit Base Layers",
+      "route": "/products/butterfly-knit-base-layer",
+      "source": "产品信息!A6:H6 + 产品图片/蝴蝶打底衫"
+    }
+  ],
+  "homepageSections": [
+    {
+      "sectionId": "hero-carousel",
+      "type": "hero",
+      "purpose": "Establish Suzhou Xigong Knitting Apparel Co., Ltd. OEM/ODM identity with all 3 customer-supplied 3840x1600 banners using per-slide adaptive safe-zone contrast.",
+      "informationGain": "Immediate positioning: Wujiang women knitwear factory since 2014, HP2-52S 7G flat knitting, 5 pcs MOQ, 4-15 days delivery.",
+      "factSource": "banner背景图/1.jpg..3.jpg + 企业资料!C15",
+      "contentType": "adaptive-hero-carousel",
+      "desktopStrategy": "Full-bleed 3840x1600 banner with left-aligned text safe zone (Slide 1 white on navy; Slides 2-3 dark slate on porcelain/ivory) and right-aligned focal subject.",
+      "mobile390Strategy": "Clean vertical framing keeping full banner subject visible with crisp readable typography and touch-friendly slide controls.",
+      "componentDecision": "custom-adaptive-hero",
+      "referencePeers": [
+        "modknitwear.com",
+        "asbx.pt"
+      ]
+    },
+    {
+      "sectionId": "factory-metrics",
+      "type": "metrics",
+      "purpose": "Provide verifiable manufacturing scale & commercial thresholds at a glance for sourcing managers.",
+      "informationGain": "Quantified factory proof: Established 2014 (20+ yrs craft), 1,000 m² facility with HP2-52S 7G machines, 100K-300K pcs/month capacity, 5 pcs MOQ & 4-15d lead time.",
+      "factSource": "企业资料!C15:C18 + FAQ!D11,D18,D21",
+      "contentType": "kpi-strip",
+      "desktopStrategy": "4-column architectural hairline metric grid on crisp porcelain background.",
+      "mobile390Strategy": "2x2 balanced metric grid with zero overflow.",
+      "componentDecision": "custom-metric-strip",
+      "referencePeers": [
+        "modknitwear.com"
+      ]
+    },
+    {
+      "sectionId": "product-categories",
+      "type": "categories",
+      "purpose": "Direct buyers into the two verified product lines plus custom OEM/ODM knit vest capability.",
+      "informationGain": "Product line differentiation: Women's Knit Sweaters & Cardigans vs Women's Knit Base Layers with real category slugs.",
+      "factSource": "企业资料!C8 + 产品信息!B5:C7",
+      "contentType": "category-cards",
+      "desktopStrategy": "2-column editorial category cards with real product studio photography + OEM knit vest capability strip.",
+      "mobile390Strategy": "Single-column stacked cards with full-card clickable hit target.",
+      "componentDecision": "custom-category-grid",
+      "referencePeers": [
+        "modknitwear.com",
+        "antiktekstil.com"
+      ]
+    },
+    {
+      "sectionId": "threejs-knit-studio",
+      "type": "interactive-3d",
+      "purpose": "Showcase 7G computerized knit stitch topology and yarn craftsmanship interactively using Three.js on a light porcelain canvas.",
+      "informationGain": "Interactive 3D inspection of Suzhou Xigong's 3 signature knit constructions (Hand-Embroidered Wool, 3D Butterfly Openwork, White Tea Eyelet Rib) with colorway switcher.",
+      "factSource": "企业资料!C17 (HP2-52S 7G) + 产品信息!F6:H7",
+      "contentType": "threejs-webgl-studio",
+      "desktopStrategy": "Split 12-col layout: light-stage Three.js 3D knit weave canvas (7 cols) + interactive stitch/colorway control panel (5 cols).",
+      "mobile390Strategy": "Responsive 320px-high Three.js canvas stacked cleanly above touch-friendly stitch tabs with DPR cap and reduced-motion static fallback.",
+      "componentDecision": "custom-threejs-knit-studio",
+      "referencePeers": [
+        "asbx.pt",
+        "antiktekstil.com"
+      ]
+    },
+    {
+      "sectionId": "featured-products",
+      "type": "products",
+      "purpose": "Present all 3 verified knitwear styles with studio photography, key craft specs, and direct detail/inquiry entry.",
+      "informationGain": "Style-level comparison of Yunjian Huaxu Cardigan, 3D Butterfly Base Layer, and White Tea Ribbed Sweater.",
+      "factSource": "产品信息!A5:H7 + 产品图片/*",
+      "contentType": "product-grid",
+      "desktopStrategy": "3-column equal-height porcelain cards with 1:1 studio product stage, color/craft badges, and View Details CTA.",
+      "mobile390Strategy": "Single-column cards preserving full garment silhouette without cropping.",
+      "componentDecision": "custom-product-cards",
+      "referencePeers": [
+        "modknitwear.com",
+        "antiktekstil.com"
+      ]
+    },
+    {
+      "sectionId": "oem-odm-workflow",
+      "type": "process",
+      "purpose": "Explain how buyers move from tech pack/sample to bulk delivery with 6-stage quality control.",
+      "informationGain": "Concrete cooperation timeline: Tech Pack/Sample (4-15d) -> Signed Approval -> HP2-52S 7G Knitting -> Hand Finishing & 100% QC -> Third-Party Inspection & Packing.",
+      "factSource": "FAQ!D5,D18,D19,D20,D25,D26,D27",
+      "contentType": "process-steps",
+      "desktopStrategy": "5-step horizontal architectural process rail with step indices and concrete deliverables.",
+      "mobile390Strategy": "Vertical numbered timeline with crisp left accent rail.",
+      "componentDecision": "custom-process-rail",
+      "referencePeers": [
+        "modknitwear.com",
+        "antiktekstil.com"
+      ]
+    },
+    {
+      "sectionId": "manufacturing-gallery",
+      "type": "factory-proof",
+      "purpose": "Provide authentic visual proof of Suzhou Xigong's computerized knitting floor, finishing line, QC inspection, and export warehouse.",
+      "informationGain": "Visual verification of actual production floor, operators, garment inspection, and warehouse readiness.",
+      "factSource": "工厂实拍图片/1 (1).jpg..1 (8).jpg (7 unique scenes)",
+      "contentType": "curated-factory-grid",
+      "desktopStrategy": "Asymmetric editorial grid featuring hero workshop photo + 3 supporting process photos with CTA to full /manufacturing gallery.",
+      "mobile390Strategy": "Stacked responsive cards with crisp business captions and no filename leaks.",
+      "componentDecision": "custom-factory-showcase",
+      "referencePeers": [
+        "asbx.pt",
+        "antiktekstil.com"
+      ]
+    },
+    {
+      "sectionId": "buyer-faq",
+      "type": "faq",
+      "purpose": "Answer real procurement questions on MOQ, sampling, lead times, customization, and quality control directly on the homepage.",
+      "informationGain": "Transparent commercial terms from customer FAQ sheet (5 pcs MOQ, 4-15d lead time, milestone photo updates, third-party inspection, 7-day post-arrival issue handling).",
+      "factSource": "FAQ问题!A4:D29",
+      "contentType": "grouped-faq-accordion",
+      "desktopStrategy": "Balanced 2-column grouped accordion with smooth open/close and full keyboard accessibility.",
+      "mobile390Strategy": "Single-column touch-friendly accordion with generous tap targets.",
+      "componentDecision": "custom-faq-accordion",
+      "referencePeers": [
+        "modknitwear.com",
+        "asbx.pt"
+      ]
+    },
+    {
+      "sectionId": "contact-rfq",
+      "type": "contact",
+      "purpose": "Convert buyer interest into qualified OEM/ODM inquiries with balanced company context and 4-digit CAPTCHA protection.",
+      "informationGain": "Complete contact channels (info@xgzzfs.com, +86 132 9516 0880, Wujiang Suzhou address) paired with real backend-connected RFQ form.",
+      "factSource": "域名+邮箱.txt + 企业资料!C4,C6,C15",
+      "contentType": "balanced-rfq-section",
+      "desktopStrategy": "Balanced 5/7 split: left column filled with company profile, address, phone, email, MOQ & lead-time facts matching the right-hand RFQ form height.",
+      "mobile390Strategy": "Stacked contact card followed by clean full-width RFQ form with clear 4-digit CAPTCHA.",
+      "componentDecision": "custom-rfq-form",
+      "referencePeers": [
+        "modknitwear.com"
+      ]
+    }
+  ]
+}

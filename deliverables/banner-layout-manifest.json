@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "customer": "苏州西宫针织服饰有限公司",
+  "banners": [
+    {
+      "media_id": "m-img-01",
+      "source": "E:\\E暂存\\苏州西宫针织服饰有限公司\\banner背景图\\1.jpg",
+      "dimensions": "3840x1600",
+      "subject_side": "right",
+      "safe_zone_side": "left",
+      "desktop_text_side": "left",
+      "desktop_text_theme": "light_on_dark",
+      "desktop_object_position": "right center",
+      "mobile_390_strategy": "split_stack_or_focus_right_with_clean_left_scrim",
+      "notes": "Deep navy knit texture on left provides high-contrast dark negative space for white typography; blueprint knitting floor + folded sweaters & yarn cones sit on right."
+    },
+    {
+      "media_id": "m-img-02",
+      "source": "E:\\E暂存\\苏州西宫针织服饰有限公司\\banner背景图\\2.jpg",
+      "dimensions": "3840x1600",
+      "subject_side": "right",
+      "safe_zone_side": "left",
+      "desktop_text_side": "left",
+      "desktop_text_theme": "dark_on_light",
+      "desktop_object_position": "right center",
+      "mobile_390_strategy": "split_stack_or_focus_right_with_clean_light_panel",
+      "notes": "Clean bright alabaster/porcelain negative space on left supports dark slate typography; computerized knitting machine + garment rack occupy right half."
+    },
+    {
+      "media_id": "m-img-03",
+      "source": "E:\\E暂存\\苏州西宫针织服饰有限公司\\banner背景图\\3.jpg",
+      "dimensions": "3840x1600",
+      "subject_side": "right",
+      "safe_zone_side": "left",
+      "desktop_text_side": "left",
+      "desktop_text_theme": "dark_on_light",
+      "desktop_object_position": "right center",
+      "mobile_390_strategy": "split_stack_or_focus_right_with_clean_ivory_panel",
+      "notes": "Warm ivory studio wall on left provides generous negative space for dark slate typography; mannequin & folded knitwear collection sit on right."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "context": {
+    "projectId": "project-e5eed2c4-2ea8-4704-8b13-4076b7a79866",
+    "runId": "run-cf643dd6-a317-481f-8094-37e2ad282930",
+    "purpose": "build"
+  },
+  "localRequestId": "query-160eb115-520f-4096-9e8f-8a696e7634b3",
+  "request": {
+    "match": "fuzzy",
+    "sort": "relevance",
+    "limit": "5",
+    "query": "women knitwear sweater cardigan OEM",
+    "industry": "apparel"
+  },
+  "at": "2026-11-26T09:18:04.217Z",
+  "status": 200,
+  "response": {
+    "total": 0,
+    "limit": 5,
+    "items": [],
+    "meta": {
+      "searchVersion": "fuzzy-v2",
+      "normalizedIndustry": "纺织服装与鞋包",
+      "normalizedRegion": null,
+      "normalizedSort": "relevance",
+      "concepts": [
+        "women",
+        "knitwear",
+        "sweater",
+        "cardigan"
+      ],
+      "rawTerms": [
+        "women",
+        "knitwear",
+        "sweater",
+        "cardigan"
+      ],
+      "ignoredGenericTerms": true,
+      "matchDetails": [],
+      "experimental": true,
+      "requestId": "query-160eb115-520f-4096-9e8f-8a696e7634b3",
+      "traceStatus": "recorded",
+      "responseHash": "9d2185ce55da4d668675b55064345ece4ca9ff288bde4dd4c7478e8d1d91cc05",
+      "contextStatus": "linked",
+      "transport": "mcp"
+    }
+  }
+}

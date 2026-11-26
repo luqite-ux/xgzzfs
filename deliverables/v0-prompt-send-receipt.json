@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "chatId": "voKBiKk94il",
+  "projectId": "hzTf4EJHAz5",
+  "sentAt": "2026-11-26T09:37:37.429Z",
+  "promptPath": "deliverables/v0-prompt.txt",
+  "promptSha256": "3a7173bbef81d4ca4274a398d9d298f06c042e2c303c4a00a1f1ed5d5b62144f",
+  "payloadSha256": "0f252568c1fb133d8eb962c3b3c39faf4c838fb5bba2bc58fc0412028bf97807",
+  "attachmentCount": 9,
+  "messageId": "He07vtR7L5q4RrdRMS0o2ZnH1BchoMhe",
+  "bodySha256": "3a7173bbef81d4ca4274a398d9d298f06c042e2c303c4a00a1f1ed5d5b62144f"
+}

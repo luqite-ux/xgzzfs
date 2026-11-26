@@ -1,0 +1,33 @@
+{
+  "customer_key": "D:\\Cursor\\Grand\\dulizhan\\xgzzfs",
+  "team_id": "team_v0pxRIIzSUGJleUTRNSz6GS4",
+  "checked_at": "2026-11-26T09:37:26.132Z",
+  "billing": {
+    "complete": true,
+    "source": "D:\\Cursor\\Grand\\dulizhan\\xgzzfs\\.codex-delivery\\v0-discovery.json; read-only exact project search found no project/chat",
+    "total_usd": 0,
+    "chat_ids": [],
+    "reconciled_attempt_ids": []
+  },
+  "source": {
+    "inspection": "empty",
+    "download_verified": false,
+    "empty_verified": true,
+    "local_repair_possible": false,
+    "missing_files": []
+  },
+  "request": {
+    "purpose": "initial",
+    "scope": [
+      "Home (9 sections + Three.js 7G Knit Studio)",
+      "Products",
+      "Product detail",
+      "Manufacturing",
+      "About",
+      "News",
+      "Contact + CAPTCHA RFQ",
+      "responsive motion"
+    ],
+    "estimated_usd": 3
+  }
+}

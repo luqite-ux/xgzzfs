@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "sections": [
+    {
+      "sectionId": "hero-carousel",
+      "query": "product card gallery carousel faq hero (hero-carousel)",
+      "candidates": [
+        {
+          "id": "original-hero-motion",
+          "productionReady": false,
+          "confidence": 0.6
+        },
+        {
+          "id": "original-grouped-faq",
+          "productionReady": false,
+          "confidence": 0.65
+        }
+      ],
+      "decision": "rejected",
+      "reason": "Library candidates do not match the user-requested light porcelain OpenAI/Antigravity editorial aesthetic and Three.js knitwear studio; implementing bespoke React + Tailwind + Three.js component tailored to hero-carousel.",
+      "receipt": "C:/Users/Grandlin/.gemini/antigravity/brain/cb762845-d357-4fb0-aded-b20f45e0aa2a/.system_generated/steps/122/output.txt"
+    },
+    {
+      "sectionId": "factory-metrics",
+      "query": "product card gallery carousel faq hero (factory-metrics)",
+      "candidates": [
+        {
+          "id": "original-hero-motion",
+          "productionReady": false,
+          "confidence": 0.6
+        },
+        {
+          "id": "original-grouped-faq",
+          "productionReady": false,
+          "confidence": 0.65
+        }
+      ],
+      "decision": "rejected",
+      "reason": "Library candidates do not match the user-requested light porcelain OpenAI/Antigravity editorial aesthetic and Three.js knitwear studio; implementing bespoke React + Tailwind + Three.js component tailored to factory-metrics.",
+      "receipt": "C:/Users/Grandlin/.gemini/antigravity/brain/cb762845-d357-4fb0-aded-b20f45e0aa2a/.system_generated/steps/122/output.txt"
+    },
+    {
+      "sectionId": "product-categories",
+      "query": "product card gallery carousel faq hero (product-categories)",
+      "candidates": [
+        {
+          "id": "original-hero-motion",
+          "productionReady": false,
+          "confidence": 0.6
+        },
+        {
+          "id": "original-grouped-faq",
+          "productionReady": false,
+          "confidence": 0.65
+        }
+      ],
+      "decision": "rejected",
+      "reason": "Library candidates do not match the user-requested light porcelain OpenAI/Antigravity editorial aesthetic and Three.js knitwear studio; implementing bespoke React + Tailwind + Three.js component tailored to product-categories.",
+      "receipt": "C:/Users/Grandlin/.gemini/antigravity/brain/cb762845-d357-4fb0-aded-b20f45e0aa2a/.system_generated/steps/122/output.txt"
+    },
+    {
+      "sectionId": "threejs-knit-studio",
+      "query": "product card gallery carousel faq hero (threejs-knit-studio)",
+      "candidates": [
+        {
+          "id": "original-hero-motion",
+          "productionReady": false,
+          "confidence": 0.6
+        },
+        {
+          "id": "original-grouped-faq",
+          "productionReady": false,
+          "confidence": 0.65
+        }
+      ],
+      "decision": "rejected",
+      "reason": "Library candidates do not match the user-requested light porcelain OpenAI/Antigravity editorial aesthetic and Three.js knitwear studio; implementing bespoke React + Tailwind + Three.js component tailored to threejs-knit-studio.",
+      "receipt": "C:/Users/Grandlin/.gemini/antigravity/brain/cb762845-d357-4fb0-aded-b20f45e0aa2a/.system_generated/steps/122/output.txt"
+    },
+    {
+      "sectionId": "featured-products",
+      "query": "product card gallery carousel faq hero (featured-products)",
+      "candidates": [
+        {
+          "id": "original-hero-motion",
+          "productionReady": false,
+          "confidence": 0.6
+        },
+        {
+          "id": "original-grouped-faq",
+          "productionReady": false,
+          "confidence": 0.65
+        }
+      ],
+      "decision": "rejected",
+      "reason": "Library candidates do not match the user-requested light porcelain OpenAI/Antigravity editorial aesthetic and Three.js knitwear studio; implementing bespoke React + Tailwind + Three.js component tailored to featured-products.",
+      "receipt": "C:/Users/Grandlin/.gemini/antigravity/brain/cb762845-d357-4fb0-aded-b20f45e0aa2a/.system_generated/steps/122/output.txt"
+    },
+    {
+      "sectionId": "oem-odm-workflow",
+      "query": "product card gallery carousel faq hero (oem-odm-workflow)",
+      "candidates": [
+        {
+          "id": "original-hero-motion",
+          "productionReady": false,
+          "confidence": 0.6
+        },
+        {
+          "id": "original-grouped-faq",
+          "productionReady": false,
+          "confidence": 0.65
+        }
+      ],
+      "decision": "rejected",
+      "reason": "Library candidates do not match the user-requested light porcelain OpenAI/Antigravity editorial aesthetic and Three.js knitwear studio; implementing bespoke React + Tailwind + Three.js component tailored to oem-odm-workflow.",
+      "receipt": "C:/Users/Grandlin/.gemini/antigravity/brain/cb762845-d357-4fb0-aded-b20f45e0aa2a/.system_generated/steps/122/output.txt"
+    },
+    {
+      "sectionId": "manufacturing-gallery",
+      "query": "product card gallery carousel faq hero (manufacturing-gallery)",
+      "candidates": [
+        {
+          "id": "original-hero-motion",
+          "productionReady": false,
+          "confidence": 0.6
+        },
+        {
+          "id": "original-grouped-faq",
+          "productionReady": false,
+          "confidence": 0.65
+        }
+      ],
+      "decision": "rejected",
+      "reason": "Library candidates do not match the user-requested light porcelain OpenAI/Antigravity editorial aesthetic and Three.js knitwear studio; implementing bespoke React + Tailwind + Three.js component tailored to manufacturing-gallery.",
+      "receipt": "C:/Users/Grandlin/.gemini/antigravity/brain/cb762845-d357-4fb0-aded-b20f45e0aa2a/.system_generated/steps/122/output.txt"
+    },
+    {
+      "sectionId": "buyer-faq",
+      "query": "product card gallery carousel faq hero (buyer-faq)",
+      "candidates": [
+        {
+          "id": "original-hero-motion",
+          "productionReady": false,
+          "confidence": 0.6
+        },
+        {
+          "id": "original-grouped-faq",
+          "productionReady": false,
+          "confidence": 0.65
+        }
+      ],
+      "decision": "rejected",
+      "reason": "Library candidates do not match the user-requested light porcelain OpenAI/Antigravity editorial aesthetic and Three.js knitwear studio; implementing bespoke React + Tailwind + Three.js component tailored to buyer-faq.",
+      "receipt": "C:/Users/Grandlin/.gemini/antigravity/brain/cb762845-d357-4fb0-aded-b20f45e0aa2a/.system_generated/steps/122/output.txt"
+    },
+    {
+      "sectionId": "contact-rfq",
+      "query": "product card gallery carousel faq hero (contact-rfq)",
+      "candidates": [
+        {
+          "id": "original-hero-motion",
+          "productionReady": false,
+          "confidence": 0.6
+        },
+        {
+          "id": "original-grouped-faq",
+          "productionReady": false,
+          "confidence": 0.65
+        }
+      ],
+      "decision": "rejected",
+      "reason": "Library candidates do not match the user-requested light porcelain OpenAI/Antigravity editorial aesthetic and Three.js knitwear studio; implementing bespoke React + Tailwind + Three.js component tailored to contact-rfq.",
+      "receipt": "C:/Users/Grandlin/.gemini/antigravity/brain/cb762845-d357-4fb0-aded-b20f45e0aa2a/.system_generated/steps/122/output.txt"
+    }
+  ]
+}

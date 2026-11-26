@@ -1,0 +1,42 @@
+{
+  "context": {
+    "projectId": "project-e5eed2c4-2ea8-4704-8b13-4076b7a79866",
+    "runId": "run-cf643dd6-a317-481f-8094-37e2ad282930",
+    "purpose": "build"
+  },
+  "scope": "current-run-only",
+  "otherRunIds": [],
+  "checkedAt": "2026-11-26T09:37:23.529Z",
+  "complete": false,
+  "issues": [
+    "DELIVERY_UNRECORDED"
+  ],
+  "pending": 0,
+  "failedQueryCount": 0,
+  "queries": [
+    {
+      "receiptPath": "D:\\Cursor\\Grand\\dulizhan\\xgzzfs\\deliverables\\case-query-query-160eb115-520f-4096-9e8f-8a696e7634b3.json",
+      "requestId": "query-160eb115-520f-4096-9e8f-8a696e7634b3",
+      "request": {
+        "match": "fuzzy",
+        "sort": "relevance",
+        "limit": "5",
+        "query": "women knitwear sweater cardigan OEM",
+        "industry": "apparel"
+      },
+      "status": 200,
+      "traceStatus": "recorded",
+      "decision": "none",
+      "decisionSent": true,
+      "caseSlugs": [],
+      "reason": "Internal case library returned 0 knitwear/apparel matches; adopted overseas knitwear OEM/ODM peer structures from MOD Knitwear (Turkey), ASBX (Portugal), and Antik Tekstil (Turkey) combined with light porcelain editorial aesthetic and interactive Three.js 7G knit stitch viewer.",
+      "externalReferences": [
+        "https://modknitwear.com/en/",
+        "https://asbx.pt/",
+        "https://www.antiktekstil.com/"
+      ]
+    }
+  ],
+  "deliveries": [],
+  "note": "Current run only; other runs are not certified. Adoption is agent-reported, not Owner acceptance or proven design improvement."
+}

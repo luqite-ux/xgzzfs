@@ -1,0 +1,254 @@
+{
+  "schemaVersion": 1,
+  "customerIndustry": "Women's Knitwear & Sweater OEM/ODM Manufacturing",
+  "products": [
+    "Yunjian Huaxu Hand-Embroidered Wool Knit Cardigan",
+    "White Tea Openwork Ribbed Knit Sweater",
+    "3D Embossed Butterfly Hollow-Out Knit Base Layer"
+  ],
+  "targetBuyers": [
+    "Overseas women's fashion brands",
+    "Cross-border apparel e-commerce sellers",
+    "Knitwear wholesale traders & private-label buyers"
+  ],
+  "peers": [
+    {
+      "name": "MOD Knitwear",
+      "url": "https://modknitwear.com/en/",
+      "normalizedDomain": "modknitwear.com",
+      "source": "web",
+      "overseasEvidence": {
+        "country": "Turkey (Istanbul)",
+        "whyCompetitor": "Istanbul-based B2B flat-knit sweater & cardigan OEM/ODM manufacturer targeting UK/EU/US fashion brands.",
+        "sourceUrl": "https://modknitwear.com/en/"
+      },
+      "pagesReviewed": [
+        {
+          "kind": "home",
+          "url": "https://modknitwear.com/en/",
+          "observation": "Clear KPI strip, 3GG-14GG flat-knit capability table, 6-step OEM workflow, product range cards, QC stages, and buyer FAQ.",
+          "checkedAt": "2026-11-26T09:37:23.064Z",
+          "evidence": {
+            "path": "deliverables/blueprint-evidence/peer-modknitwear-home.txt",
+            "sha256": "4a3f02f3c8d217705abc627a8c5978ea99cea1982ac191f149ec34cfb0c8aea4"
+          }
+        },
+        {
+          "kind": "navigation",
+          "url": "https://modknitwear.com/en/oem-knitwear-production/",
+          "observation": "Top nav separates About, Products (Sweaters, Cardigans, Vests, Knit dresses), Services (OEM, ODM, Low MOQ, Sampling), Production, Quality, Request a quote.",
+          "checkedAt": "2026-11-26T09:37:23.064Z",
+          "evidence": {
+            "path": "deliverables/blueprint-evidence/peer-modknitwear-oem.txt",
+            "sha256": "7f79daab30a8db452510799a50a2506bfe5188a070361a828d187cf2c30a8255"
+          }
+        },
+        {
+          "kind": "products",
+          "url": "https://modknitwear.com/en/cardigan-manufacturer/",
+          "observation": "Dedicated cardigan manufacturer page detailing knit structures, yarn options, MOQ, sampling lead times, and direct quote CTA.",
+          "checkedAt": "2026-11-26T09:37:23.064Z",
+          "evidence": {
+            "path": "deliverables/blueprint-evidence/peer-modknitwear-cardigan.txt",
+            "sha256": "c7f136ba0799f79e76ff8fa1ba67e937f57b87c4f8003e8428da69b270059572"
+          }
+        }
+      ],
+      "homeSections": [
+        "Hero with flat-knit positioning",
+        "At-a-glance buyer facts",
+        "End-to-end OEM/ODM services",
+        "6-stage production timeline",
+        "Product range cards",
+        "Multi-stage QC",
+        "FAQ",
+        "Production brief RFQ"
+      ],
+      "navigation": [
+        "About",
+        "Products",
+        "Services",
+        "Production",
+        "Quality",
+        "Request a quote"
+      ],
+      "productTaxonomy": [
+        "Sweaters",
+        "Cardigans",
+        "Knitted vests",
+        "Knit dresses",
+        "Knit tops"
+      ],
+      "adopt": [
+        "At-a-glance structured buyer metrics (capacity, gauge, MOQ, lead time)",
+        "Clear 6-stage QC & sampling-to-bulk workflow",
+        "Structured buyer FAQ covering MOQ, sampling, and delivery"
+      ],
+      "reject": [
+        "High 300-piece MOQ positioning (Suzhou Xigong supports 5 pcs MOQ)",
+        "Unverified third-party certification badges (Suzhou Xigong has no supplied certs)"
+      ],
+      "evidence": [
+        {
+          "url": "https://modknitwear.com/en/",
+          "observation": "Verified Istanbul flat-knit OEM homepage with 3GG-14GG gauge specs and structured B2B quote flow."
+        }
+      ]
+    },
+    {
+      "name": "ASBX",
+      "url": "https://asbx.pt/",
+      "normalizedDomain": "asbx.pt",
+      "source": "web",
+      "overseasEvidence": {
+        "country": "Portugal (Barcelos)",
+        "whyCompetitor": "Portuguese low-MOQ private-label clothing and knitwear manufacturer serving emerging overseas fashion brands.",
+        "sourceUrl": "https://asbx.pt/"
+      },
+      "pagesReviewed": [
+        {
+          "kind": "home",
+          "url": "https://asbx.pt/",
+          "observation": "Strong low-MOQ value proposition upfront, clear custom production vs sample path, factory capability proof, and FAQ link.",
+          "checkedAt": "2026-11-26T09:37:23.064Z",
+          "evidence": {
+            "path": "deliverables/blueprint-evidence/peer-asbx-home.txt",
+            "sha256": "299785c1ed50b1a7b87919d95af6d256118bc845eff113af5f635f5632e844f7"
+          }
+        },
+        {
+          "kind": "navigation",
+          "url": "https://asbx.pt/asbx-our-factory/",
+          "observation": "Navigation highlights Custom Production, Products, Technical Capacities, FAQ, Our Factory, News, Contacts.",
+          "checkedAt": "2026-11-26T09:37:23.064Z",
+          "evidence": {
+            "path": "deliverables/blueprint-evidence/peer-asbx-factory.txt",
+            "sha256": "e8c4b0567c02b806ef42ea36d7d086df777afd5841e696d6f3dca7eeb12ecc8e"
+          }
+        },
+        {
+          "kind": "products",
+          "url": "https://asbx.pt/knitwear-manufacturer/",
+          "observation": "Knitwear capability showcase presenting craft techniques (embroidery, 3D knit textures) and low-MOQ custom production.",
+          "checkedAt": "2026-11-26T09:37:23.064Z",
+          "evidence": {
+            "path": "deliverables/blueprint-evidence/peer-asbx-knitwear.txt",
+            "sha256": "26565d2892cc1851cc1ac55ff67b5fa83204753c7ed9a2f414a8774a6bebd537"
+          }
+        }
+      ],
+      "homeSections": [
+        "Low-MOQ hero",
+        "Custom manufacturing solutions",
+        "Craftsmanship & knit techniques",
+        "Global export & factory scale",
+        "Factory showcase",
+        "FAQ & inquiry CTA"
+      ],
+      "navigation": [
+        "Custom Production",
+        "Products",
+        "Our Factory",
+        "FAQ",
+        "News",
+        "Contacts"
+      ],
+      "productTaxonomy": [
+        "Knitwear",
+        "Custom Production",
+        "Samples & Blanks"
+      ],
+      "adopt": [
+        "Prominent low-MOQ & flexible trial-order messaging for emerging brands",
+        "Dedicated Factory & FAQ routes answering buyer onboarding questions"
+      ],
+      "reject": [
+        "E-commerce cart / Euro pricing / Shopify affiliate links (strictly B2B inquiry-only site)",
+        "Dense promotional banners"
+      ],
+      "evidence": [
+        {
+          "url": "https://asbx.pt/",
+          "observation": "Verified Barcelos, Portugal knitwear/apparel factory positioning around low MOQ and factory transparency."
+        }
+      ]
+    },
+    {
+      "name": "Antik Tekstil",
+      "url": "https://www.antiktekstil.com/",
+      "normalizedDomain": "antiktekstil.com",
+      "source": "web",
+      "overseasEvidence": {
+        "country": "Turkey (Istanbul)",
+        "whyCompetitor": "Istanbul flat-knit sweater manufacturer operating computerized knitting machines with Women's Knitwear collections and 6-step production process.",
+        "sourceUrl": "https://www.antiktekstil.com/"
+      },
+      "pagesReviewed": [
+        {
+          "kind": "home",
+          "url": "https://www.antiktekstil.com/",
+          "observation": "Clean 6-stage knitwear manufacturing breakdown (Design, Yarn Selection, Computerized Knitting, Embroidery/Embellishment, QC & Ironing, Packaging) and Women's Knitwear collections.",
+          "checkedAt": "2026-11-26T09:37:23.064Z",
+          "evidence": {
+            "path": "deliverables/blueprint-evidence/peer-antiktekstil-home.txt",
+            "sha256": "3840d9d6020918716e5e656ba07ca71e1eef130707fc6a48790d511db144a71f"
+          }
+        },
+        {
+          "kind": "navigation",
+          "url": "https://www.antiktekstil.com/",
+          "observation": "Clear navigation: Home, Corporate (About Us, Quality Policy), Collections (Women's Knitwear), Manufacturing (Knitting, Linking, Ironing & Packaging), Contact.",
+          "checkedAt": "2026-11-26T09:37:23.064Z",
+          "evidence": {
+            "path": "deliverables/blueprint-evidence/peer-antiktekstil-home.txt",
+            "sha256": "3840d9d6020918716e5e656ba07ca71e1eef130707fc6a48790d511db144a71f"
+          }
+        },
+        {
+          "kind": "products",
+          "url": "https://www.antiktekstil.com/",
+          "observation": "Highlights Women's Knitwear collection alongside embroidery/embellishment capabilities directly relevant to Suzhou Xigong's hand embroidery and 3D butterfly knit.",
+          "checkedAt": "2026-11-26T09:37:23.064Z",
+          "evidence": {
+            "path": "deliverables/blueprint-evidence/peer-antiktekstil-home.txt",
+            "sha256": "3840d9d6020918716e5e656ba07ca71e1eef130707fc6a48790d511db144a71f"
+          }
+        }
+      ],
+      "homeSections": [
+        "Hero",
+        "6-stage Knitwear Production Process",
+        "Embroidery & Embellishment highlight",
+        "Collections (Women's Knitwear)",
+        "About Us & Factory Scale",
+        "Contact"
+      ],
+      "navigation": [
+        "Home",
+        "About Us",
+        "Collections",
+        "Manufacturing",
+        "Contact"
+      ],
+      "productTaxonomy": [
+        "Women's Knitwear",
+        "Men's Knitwear"
+      ],
+      "adopt": [
+        "Dedicated highlight on Embroidery & 3D Embellishment alongside computerized flat knitting",
+        "Clear separation of Collections vs Manufacturing process"
+      ],
+      "reject": [
+        "Generic dark footer clutter",
+        "Certifications block (Suzhou Xigong has no certificates in source materials)"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.antiktekstil.com/",
+          "observation": "Verified Istanbul knitwear manufacturer detailing computerized knitting + embroidery + QC process."
+        }
+      ]
+    }
+  ],
+  "caseIntake": []
+}
