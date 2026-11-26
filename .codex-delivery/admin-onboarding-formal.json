@@ -1,0 +1,57 @@
+{
+  "schema_version": 2,
+  "issue_id": "BACKEND-PROXY-ORIGIN-ROUNDTRIP",
+  "pass": false,
+  "phase": "formal",
+  "tenant_id": "3730d1b9-f198-4ca8-a78e-3565d338d1b5",
+  "base_url": "https://xgzzfs.com",
+  "project_id": "prj_XBsom3cn49jeW2vzhCr2M8KMpMY4",
+  "origin_hosts": [
+    "xgzzfs.com",
+    "www.xgzzfs.com"
+  ],
+  "site_deployment_id": "dpl_59UoBsW5Vq25AJeNH1TBzRrhnLeJ",
+  "site_sha": "6fd609f87e73aef0d53185dd4a2bc5088570f09e",
+  "environment_verification": [
+    {
+      "key": "NEXT_PUBLIC_TENANT_ID",
+      "environment_id": "9XqNu25ueaEH5jMw",
+      "target": "production",
+      "result": "VALUE_MATCH"
+    },
+    {
+      "key": "NEXT_PUBLIC_ADMIN_URL",
+      "environment_id": "Xh45ENkIJslBocii",
+      "target": "production",
+      "result": "VALUE_MATCH"
+    },
+    {
+      "key": "NEXT_PUBLIC_SUPABASE_URL",
+      "environment_id": "mBPhwdWKd5vHsbZN",
+      "target": "production",
+      "result": "VALUE_MATCH"
+    },
+    {
+      "key": "NEXT_PUBLIC_SUPABASE_ANON_KEY",
+      "environment_id": "KIkXZQrLa8Y7c0zJ",
+      "target": "production",
+      "result": "VALUE_MATCH"
+    },
+    {
+      "key": "SUPABASE_SERVICE_ROLE_KEY",
+      "environment_id": "CuSSXcipuoxDRYfF",
+      "target": "production",
+      "result": "VALUE_MATCH"
+    }
+  ],
+  "checks": {
+    "tenant_account": true,
+    "project_ownership": true,
+    "site_environment": true
+  },
+  "shared_deployment_id": "dpl_2njLK6LRf1cZ7FJhLgLhCFvdNVQe",
+  "shared_sha": "42cc5880c679d9e6270418466fddc818ef2171c0",
+  "error": "Deployment authentication required; no existing unexpired temporary share",
+  "validation_failure": null,
+  "login_response": null
+}

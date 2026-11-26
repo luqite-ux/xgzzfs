@@ -1,9 +1,12 @@
 /** @type {import('next').NextConfig} */
 const ADMIN_ORIGIN = (
-  process.env.HUANQIU_ADMIN_ORIGIN ||
   process.env.NEXT_PUBLIC_ADMIN_URL ||
+  process.env.HUANQIU_ADMIN_ORIGIN ||
   'https://admin.globle-trade.com'
-).replace(/\/$/, '')
+)
+  .trim()
+  .replace(/[\r\n]/g, '')
+  .replace(/\/$/, '')
 
 const nextConfig = {
   typescript: {
@@ -13,16 +16,16 @@ const nextConfig = {
     unoptimized: true,
   },
   async rewrites() {
-    return [
-      { source: '/admin', destination: `${ADMIN_ORIGIN}/login` },
-      { source: '/admin/login', destination: `${ADMIN_ORIGIN}/login` },
-      { source: '/admin/:path*', destination: `${ADMIN_ORIGIN}/:path*` },
-      { source: '/login', destination: `${ADMIN_ORIGIN}/login` },
-      { source: '/api/auth/:path*', destination: `${ADMIN_ORIGIN}/api/auth/:path*` },
-      { source: '/api/admin/:path*', destination: `${ADMIN_ORIGIN}/api/admin/:path*` },
-      { source: '/api/public/analytics.js', destination: `${ADMIN_ORIGIN}/api/public/analytics.js` },
-      { source: '/api/public/analytics/:path*', destination: `${ADMIN_ORIGIN}/api/public/analytics/:path*` },
-    ]
+    if (!ADMIN_ORIGIN) return []
+    return {
+      afterFiles: [
+        { source: '/admin', destination: `${ADMIN_ORIGIN}/admin` },
+        { source: '/admin/:path*', destination: `${ADMIN_ORIGIN}/admin/:path*` },
+        { source: '/api/admin/:path*', destination: `${ADMIN_ORIGIN}/api/admin/:path*` },
+        { source: '/api/public/analytics.js', destination: `${ADMIN_ORIGIN}/api/public/analytics.js` },
+        { source: '/api/public/analytics/:path*', destination: `${ADMIN_ORIGIN}/api/public/analytics/:path*` },
+      ],
+    }
   },
   async headers() {
     return [
